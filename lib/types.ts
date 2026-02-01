@@ -1,5 +1,4 @@
 export type DeviceClass =
-  | 'sensor'
   | 'light'
   | 'plug'
   | 'switch'
@@ -11,6 +10,13 @@ export type DeviceClass =
   | 'blind'
   | 'speaker'
   | 'climate'
+  | 'remote'
+  | 'temperature_sensor'
+  | 'motion_sensor'
+  | 'water_leak_sensor'
+  | 'contact_sensor'
+  | 'light_sensor'
+  | 'air_quality_sensor'
   | 'other';
 
 export type Protocol = 'Matter' | 'Thread' | 'Zigbee' | 'Z-Wave' | 'WiFi' | 'Bluetooth';

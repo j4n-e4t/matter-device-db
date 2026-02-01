@@ -7,7 +7,6 @@ import {
   PlugIcon,
   Battery,
   Lightbulb,
-  PanelTop,
   ToggleLeft,
   Lock,
   Thermometer,
@@ -18,6 +17,14 @@ import {
   Snowflake,
   Package,
   Radio,
+  Activity,
+  Droplets,
+  DoorOpen,
+  Sun,
+  Wind,
+  Gamepad2,
+  Cable,
+  Usb,
   type LucideIcon,
 } from "lucide-react"
 import { Badge, badgeSemanticStyles, type BadgeGenericColor } from "@/components/ui/badge"
@@ -108,7 +115,6 @@ export const protocolConfig: Record<Protocol, ProtocolConfig> = {
 
 export type DeviceClass =
   | "light"
-  | "sensor"
   | "plug"
   | "switch"
   | "lock"
@@ -119,6 +125,13 @@ export type DeviceClass =
   | "blind"
   | "speaker"
   | "climate"
+  | "remote"
+  | "temperature_sensor"
+  | "motion_sensor"
+  | "water_leak_sensor"
+  | "contact_sensor"
+  | "light_sensor"
+  | "air_quality_sensor"
   | "other"
 
 interface DeviceClassConfig {
@@ -132,11 +145,6 @@ export const deviceClassConfig: Record<DeviceClass, DeviceClassConfig> = {
     icon: Lightbulb,
     label: "Lights",
     className: badgeSemanticStyles.category.light,
-  },
-  sensor: {
-    icon: PanelTop,
-    label: "Sensors",
-    className: badgeSemanticStyles.category.sensor,
   },
   plug: {
     icon: PlugIcon,
@@ -188,6 +196,41 @@ export const deviceClassConfig: Record<DeviceClass, DeviceClassConfig> = {
     label: "Climate",
     className: badgeSemanticStyles.category.climate,
   },
+  remote: {
+    icon: Gamepad2,
+    label: "Remotes",
+    className: badgeSemanticStyles.category.remote,
+  },
+  temperature_sensor: {
+    icon: Thermometer,
+    label: "Temperature",
+    className: badgeSemanticStyles.category.temperature_sensor,
+  },
+  motion_sensor: {
+    icon: Activity,
+    label: "Motion",
+    className: badgeSemanticStyles.category.motion_sensor,
+  },
+  water_leak_sensor: {
+    icon: Droplets,
+    label: "Water Leak",
+    className: badgeSemanticStyles.category.water_leak_sensor,
+  },
+  contact_sensor: {
+    icon: DoorOpen,
+    label: "Contact",
+    className: badgeSemanticStyles.category.contact_sensor,
+  },
+  light_sensor: {
+    icon: Sun,
+    label: "Light",
+    className: badgeSemanticStyles.category.light_sensor,
+  },
+  air_quality_sensor: {
+    icon: Wind,
+    label: "Air Quality",
+    className: badgeSemanticStyles.category.air_quality_sensor,
+  },
   other: {
     icon: Package,
     label: "Other",
@@ -199,7 +242,7 @@ export const deviceClassConfig: Record<DeviceClass, DeviceClassConfig> = {
 // Power Supply Configuration
 // =============================================================================
 
-export type PowerSupply = "mains" | "battery"
+export type PowerSupply = "mains" | "battery" | "poe" | "usb"
 
 interface PowerSupplyConfig {
   icon: LucideIcon
@@ -217,6 +260,16 @@ export const powerSupplyConfig: Record<PowerSupply, PowerSupplyConfig> = {
     icon: Battery,
     label: "Battery",
     className: badgeSemanticStyles.powerSupply.battery,
+  },
+  poe: {
+    icon: Cable,
+    label: "PoE",
+    className: badgeSemanticStyles.powerSupply.poe,
+  },
+  usb: {
+    icon: Usb,
+    label: "USB",
+    className: badgeSemanticStyles.powerSupply.usb,
   },
 }
 

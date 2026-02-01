@@ -136,6 +136,8 @@ export const deviceClassIcons: Record<string, string> = {
 export const powerSupplyLabels: Record<string, string> = {
   mains: 'Mains',
   battery: 'Battery',
+  poe: 'PoE',
+  usb: 'USB',
 };
 
 export const featureLabels: Record<string, string> = {

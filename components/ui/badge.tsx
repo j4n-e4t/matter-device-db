@@ -61,7 +61,6 @@ export const badgeSemanticStyles = {
   },
   category: {
     light: `${semanticBase} border-border`,
-    sensor: `${semanticBase} border-border`,
     plug: `${semanticBase} border-border`,
     switch: `${semanticBase} border-border`,
     lock: `${semanticBase} border-border`,
@@ -72,11 +71,20 @@ export const badgeSemanticStyles = {
     blind: `${semanticBase} border-border`,
     speaker: `${semanticBase} border-border`,
     climate: `${semanticBase} border-border`,
+    remote: `${semanticBase} border-border`,
+    temperature_sensor: `${semanticBase} border-border`,
+    motion_sensor: `${semanticBase} border-border`,
+    water_leak_sensor: `${semanticBase} border-border`,
+    contact_sensor: `${semanticBase} border-border`,
+    light_sensor: `${semanticBase} border-border`,
+    air_quality_sensor: `${semanticBase} border-border`,
     other: `${semanticBase} border-border`,
   },
   powerSupply: {
     mains: `${semanticBase} border-border`,
     battery: `${semanticBase} border-border`,
+    poe: `${semanticBase} border-indigo-500 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400`,
+    usb: `${semanticBase} border-rose-500 bg-rose-500/10 text-rose-600 dark:text-rose-400`,
   },
   manufacturer: `${semanticBase} border-border gap-1.5`,
   generic: {

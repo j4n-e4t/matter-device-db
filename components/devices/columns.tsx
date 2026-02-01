@@ -2,6 +2,7 @@
 
 import { ColumnDef } from "@tanstack/react-table"
 import Image from "next/image"
+import Link from "next/link"
 import { DataTableColumnHeader } from "./data-table-column-header"
 import {
   ProtocolBadge,
@@ -47,7 +48,14 @@ export const columns: ColumnDef<Device>[] = [
     ),
     cell: ({ row }) => {
       const device = row.original
-      return <span className="font-medium">{device.name}</span>
+      return (
+        <Link
+          href={`/device/${device.id}`}
+          className="font-medium hover:underline text-primary"
+        >
+          {device.name}
+        </Link>
+      )
     },
     filterFn: (row, id, value) => {
       return row.getValue<string>(id).toLowerCase().includes(value.toLowerCase())
