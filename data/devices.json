@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ikea-kajplats-e27-1055-white",
+    "name": "Kajplats E27 1055 White",
+    "manufacturer_id": "ikea",
+    "device_class": "light",
+    "protocols": ["Thread", "Bluetooth"],
+    "powerSupply": "mains",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1055-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
+    "meta": {
+      "last_updated": "2026-01-20"
+    }
+  },
+    {
+    "id": "ikea-timmerflotte",
+    "name": "Timmerflotte",
+    "manufacturer_id": "ikea",
+    "device_class": "sensor",
+    "protocols": ["Thread", "Bluetooth"],
+    "powerSupply": "battery",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/timmerflotte-temperatur-feuchtigkeitssensor-smart__1402990_pe969208_s5.jpg?f=s",
+    "meta": {
+      "last_updated": "2026-01-20"
+    }
+  }
+]
