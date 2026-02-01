@@ -17,17 +17,27 @@ import {
   getManufacturerById,
 } from "@/lib/devices"
 import type { Device } from "@/lib/types"
+import type { TableFilters, SetTableFilters } from "@/lib/use-table-filters"
 
 interface DataTableSidebarProps<TData> {
   table: Table<TData>
   data: TData[]
+  filters: TableFilters
+  setFilters: SetTableFilters
 }
 
 export function DataTableSidebar<TData extends Device>({
   table,
   data,
+  filters,
+  setFilters,
 }: DataTableSidebarProps<TData>) {
-  const isFiltered = table.getState().columnFilters.length > 0
+  const isFiltered =
+    filters.search !== "" ||
+    filters.manufacturer.length > 0 ||
+    filters.category.length > 0 ||
+    filters.protocol.length > 0 ||
+    filters.power.length > 0
 
   const manufacturerOptions = getUniqueManufacturerIds(data).map((id) => {
     const manufacturer = getManufacturerById(id)
@@ -85,6 +95,8 @@ export function DataTableSidebar<TData extends Device>({
               column={table.getColumn("manufacturer_id")}
               title="Manufacturer"
               options={manufacturerOptions}
+              value={filters.manufacturer}
+              onChange={(value) => setFilters({ manufacturer: value.length > 0 ? value : null })}
             />
           </div>
         )}
@@ -95,6 +107,8 @@ export function DataTableSidebar<TData extends Device>({
               column={table.getColumn("device_class")}
               title="Category"
               options={deviceClassOptions}
+              value={filters.category}
+              onChange={(value) => setFilters({ category: value.length > 0 ? value : null })}
             />
           </div>
         )}
@@ -105,6 +119,8 @@ export function DataTableSidebar<TData extends Device>({
               column={table.getColumn("protocols")}
               title="Protocol"
               options={protocolOptions}
+              value={filters.protocol}
+              onChange={(value) => setFilters({ protocol: value.length > 0 ? value : null })}
             />
           </div>
         )}
@@ -115,6 +131,8 @@ export function DataTableSidebar<TData extends Device>({
               column={table.getColumn("powerSupply")}
               title="Power supply"
               options={powerSupplyOptions}
+              value={filters.power}
+              onChange={(value) => setFilters({ power: value.length > 0 ? value : null })}
             />
           </div>
         )}
@@ -123,7 +141,13 @@ export function DataTableSidebar<TData extends Device>({
       {isFiltered && (
         <Button
           variant="ghost"
-          onClick={() => table.resetColumnFilters()}
+          onClick={() => setFilters({
+            search: null,
+            manufacturer: null,
+            category: null,
+            protocol: null,
+            power: null,
+          })}
           className="h-8 w-full justify-start px-2"
         >
           <X className="mr-2 h-4 w-4" />

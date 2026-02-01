@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DataTable } from '@/components/devices/data-table';
@@ -34,7 +35,9 @@ export default function HomePage() {
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        <DataTable columns={columns} data={devices} />
+        <Suspense fallback={<div className="h-96 flex items-center justify-center text-muted-foreground">Loading devices...</div>}>
+          <DataTable columns={columns} data={devices} />
+        </Suspense>
       </main>
     </div>
   );

@@ -29,15 +29,19 @@ interface DataTableFacetedFilterProps<TData, TValue> {
     icon?: React.ReactNode
     className?: string
   }[]
+  value: string[]
+  onChange: (value: string[]) => void
 }
 
 export function DataTableFacetedFilter<TData, TValue>({
   column,
   title,
   options,
+  value,
+  onChange,
 }: DataTableFacetedFilterProps<TData, TValue>) {
   const facets = column?.getFacetedUniqueValues()
-  const selectedValues = new Set(column?.getFilterValue() as string[])
+  const selectedValues = new Set(value)
 
   const selectedOptions = options.filter((option) => selectedValues.has(option.value))
 
@@ -64,15 +68,13 @@ export function DataTableFacetedFilter<TData, TValue>({
                   <CommandItem
                     key={option.value}
                     onSelect={() => {
+                      const newValues = new Set(selectedValues)
                       if (isSelected) {
-                        selectedValues.delete(option.value)
+                        newValues.delete(option.value)
                       } else {
-                        selectedValues.add(option.value)
+                        newValues.add(option.value)
                       }
-                      const filterValues = Array.from(selectedValues)
-                      column?.setFilterValue(
-                        filterValues.length ? filterValues : undefined
-                      )
+                      onChange(Array.from(newValues))
                     }}
                   >
                     <div
@@ -103,7 +105,7 @@ export function DataTableFacetedFilter<TData, TValue>({
                 <CommandSeparator />
                 <CommandGroup>
                   <CommandItem
-                    onSelect={() => column?.setFilterValue(undefined)}
+                    onSelect={() => onChange([])}
                     className="justify-center text-center"
                   >
                     Reset filter
