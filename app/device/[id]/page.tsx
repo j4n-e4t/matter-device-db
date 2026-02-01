@@ -5,11 +5,12 @@ import { ArrowLeft, Calendar, Download, ExternalLink, Clock } from "lucide-react
 import { Button } from "@/components/ui/button"
 import {
   ProtocolBadge,
-  DeviceClassBadge,
+  CapabilityBadge,
   PowerSupplyBadge,
   GenericBadge,
 } from "@/components/badges"
 import { getAllDevices, getDeviceById, getManufacturerById, featureLabels } from "@/lib/devices"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export async function generateStaticParams() {
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const manufacturer = getManufacturerById(device.manufacturer_id)
   return {
     title: `${device.name} by ${manufacturer?.name || device.manufacturer_id} - Matter Device DB`,
-    description: `View details for ${device.name}, a ${device.device_class} device with ${device.protocols.join(", ")} support.`,
+    description: `View details for ${device.name}, a device with ${device.capabilities.join(", ")} capabilities and ${device.protocols.join(", ")} support.`,
   }
 }
 
@@ -103,7 +104,9 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
 
             {/* Badges Row */}
             <div className="flex flex-wrap gap-2">
-              <DeviceClassBadge deviceClass={device.device_class} />
+              {device.capabilities.map((capability) => (
+                <CapabilityBadge key={capability} capability={capability} />
+              ))}
               {device.powerSupply && (
                 <PowerSupplyBadge powerSupply={device.powerSupply} />
               )}
@@ -164,6 +167,49 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                 </div>
               )}
             </div>
+
+            {/* Pricing Table */}
+            {device.prices && device.prices.length > 0 && (
+              <div className="bg-card border rounded-lg">
+                <div className="p-4 border-b">
+                  <h2 className="text-base font-semibold">Store pricing</h2>
+                  <p className="text-sm text-muted-foreground">Compare current pricing across retailers.</p>
+                </div>
+                <div className="p-4">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead>Store</TableHead>
+                        <TableHead>Price</TableHead>
+                        <TableHead>Last updated</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {device.prices.map((price) => (
+                        <TableRow key={`${device.id}-${price.store}`}>
+                          <TableCell className="font-medium">{price.store}</TableCell>
+                          <TableCell>
+                            {new Intl.NumberFormat("en-US", {
+                              style: "currency",
+                              currency: price.currency || "USD",
+                            }).format(price.price)}
+                          </TableCell>
+                          <TableCell className="text-muted-foreground">
+                            {price.lastUpdated
+                              ? new Date(price.lastUpdated).toLocaleDateString("en-US", {
+                                  year: "numeric",
+                                  month: "short",
+                                  day: "numeric",
+                                })
+                              : "—"}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
+              </div>
+            )}
 
             {/* Manufacturer Link */}
             {manufacturer?.website && (

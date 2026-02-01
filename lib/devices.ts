@@ -48,8 +48,8 @@ export function filterDevices(devices: Device[], filters: FilterState): Device[]
       return false;
     }
 
-    // Device class filter
-    if (filters.device_class && device.device_class !== filters.device_class) {
+    // Capability filter
+    if (filters.capability && !device.capabilities.includes(filters.capability)) {
       return false;
     }
 
@@ -77,9 +77,10 @@ export function getUniqueProtocols(devices: Device[]): string[] {
   return Array.from(protocols).sort();
 }
 
-export function getUniqueDeviceClasses(devices: Device[]): string[] {
-  const classes = new Set(devices.map((d) => d.device_class));
-  return Array.from(classes).sort();
+export function getUniqueCapabilities(devices: Device[]): string[] {
+  const capabilities = new Set<string>();
+  devices.forEach((d) => d.capabilities.forEach((c) => capabilities.add(c)));
+  return Array.from(capabilities).sort();
 }
 
 export function getUniquePowerSupplies(devices: Device[]): string[] {
@@ -91,34 +92,42 @@ export function getUniquePowerSupplies(devices: Device[]): string[] {
 }
 
 export function getDeviceStats(devices: Device[]) {
+  const allCapabilities = new Set<string>();
+  devices.forEach((d) => d.capabilities.forEach((c) => allCapabilities.add(c)));
   return {
     total: devices.length,
     withMatter: devices.filter((d) => d.protocols.includes('Matter')).length,
     withThread: devices.filter((d) => d.protocols.includes('Thread')).length,
     batteryPowered: devices.filter((d) => d.powerSupply === 'battery').length,
     manufacturers: new Set(devices.map((d) => d.manufacturer_id)).size,
-    deviceClasses: new Set(devices.map((d) => d.device_class)).size,
+    capabilities: allCapabilities.size,
   };
 }
 
-export const deviceClassLabels: Record<string, string> = {
-  sensor: 'Sensors',
-  light: 'Lights',
-  plug: 'Plugs',
-  switch: 'Switches',
-  lock: 'Locks',
-  thermostat: 'Thermostats',
-  camera: 'Cameras',
-  hub: 'Hubs',
-  bridge: 'Bridges',
-  blind: 'Blinds',
-  speaker: 'Speakers',
+export const capabilityLabels: Record<string, string> = {
+  light: 'Light',
+  plug: 'Plug',
+  switch: 'Switch',
+  lock: 'Lock',
+  thermostat: 'Thermostat',
+  camera: 'Camera',
+  hub: 'Hub',
+  bridge: 'Bridge',
+  blind: 'Blind',
+  speaker: 'Speaker',
   climate: 'Climate',
+  remote: 'Remote',
+  temperature: 'Temperature',
+  humidity: 'Humidity',
+  motion: 'Motion',
+  water_leak: 'Water Leak',
+  contact: 'Contact',
+  brightness: 'Brightness',
+  air_quality: 'Air Quality',
   other: 'Other',
 };
 
-export const deviceClassIcons: Record<string, string> = {
-  sensor: '📡',
+export const capabilityIcons: Record<string, string> = {
   light: '💡',
   plug: '🔌',
   switch: '🎚️',
@@ -130,6 +139,14 @@ export const deviceClassIcons: Record<string, string> = {
   blind: '🪟',
   speaker: '🔊',
   climate: '❄️',
+  remote: '🎮',
+  temperature: '🌡️',
+  humidity: '💧',
+  motion: '👋',
+  water_leak: '💦',
+  contact: '🚪',
+  brightness: '☀️',
+  air_quality: '💨',
   other: '📦',
 };
 

@@ -20,7 +20,7 @@ const columnLabels: Record<string, string> = {
   imageUrl: "Image",
   name: "Name",
   manufacturer_id: "Manufacturer",
-  device_class: "Category",
+  capabilities: "Capabilities",
   protocols: "Protocols",
   powerSupply: "Power supply",
 }

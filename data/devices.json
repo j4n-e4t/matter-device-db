@@ -3,72 +3,99 @@
     "id": "ikea-kajplats-e27-1055-white",
     "name": "Kajplats E27 1055 White",
     "manufacturer_id": "ikea",
-    "device_class": "light",
+    "capabilities": ["light"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "mains",
     "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1055-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-01-20"
-    }
+    },
+    "prices": [
+      { "store": "IKEA Online", "price": 19.99, "currency": "USD", "lastUpdated": "2026-01-15" },
+      { "store": "HomeHub", "price": 21.49, "currency": "USD", "lastUpdated": "2026-01-18" },
+      { "store": "SmartHome Central", "price": 18.99, "currency": "USD", "lastUpdated": "2026-01-19" }
+    ]
   },
   {
     "id": "ikea-timmerflotte",
     "name": "TIMMERFLOTTE Temperature Sensor",
     "manufacturer_id": "ikea",
-    "device_class": "temperature_sensor",
+    "capabilities": ["temperature", "humidity"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/timmerflotte-temperatur-feuchtigkeitssensor-smart__1402990_pe969208_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-01-20"
-    }
+    },
+    "prices": [
+      { "store": "IKEA Online", "price": 24.99, "currency": "USD", "lastUpdated": "2026-01-16" },
+      { "store": "ClimateSense", "price": 26.5, "currency": "USD", "lastUpdated": "2026-01-22" }
+    ]
   },
   {
     "id": "ikea-myggspray",
     "name": "MYGGSPRAY Motion Sensor",
     "manufacturer_id": "ikea",
-    "device_class": "motion_sensor",
+    "capabilities": ["motion", "brightness"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggspray-funk-bewegungsmelder-smart__1420239_pe977223_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
-    }
+    },
+    "prices": [
+      { "store": "IKEA Online", "price": 17.99, "currency": "USD", "lastUpdated": "2026-01-28" },
+      { "store": "MotionMart", "price": 16.75, "currency": "USD", "lastUpdated": "2026-01-30" },
+      { "store": "SmartHome Central", "price": 18.25, "currency": "USD", "lastUpdated": "2026-02-01" }
+    ]
   },
   {
     "id": "ikea-klippbok",
     "name": "KLIPPBOK Water Leak Sensor ",
     "manufacturer_id": "ikea",
-    "device_class": "water_leak_sensor",
+    "capabilities": ["water_leak"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/klippbok-wasserlecksensor-smart__1420217_pe977208_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
-    }
+    },
+    "prices": [
+      { "store": "IKEA Online", "price": 29.99, "currency": "USD", "lastUpdated": "2026-01-25" },
+      { "store": "LeakGuard", "price": 32.0, "currency": "USD", "lastUpdated": "2026-01-29" }
+    ]
   },
   {
     "id": "ikea-bilresa",
     "name": "BILRESA Dual Button Remote",
     "manufacturer_id": "ikea",
-    "device_class": "remote",
+    "capabilities": ["remote"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/bilresa-fernbedienung-weiss-smart-dualschalter__1402959_pe969197_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
-    }
+    },
+    "prices": [
+      { "store": "IKEA Online", "price": 14.99, "currency": "USD", "lastUpdated": "2026-01-15" },
+      { "store": "RemoteWorks", "price": 15.75, "currency": "USD", "lastUpdated": "2026-01-27" },
+      { "store": "SmartHome Central", "price": 15.25, "currency": "USD", "lastUpdated": "2026-01-31" }
+    ]
   },
   {
     "id": "ikea-myggbett",
     "name": "MYGGBETT Contact Sensor",
     "manufacturer_id": "ikea",
-    "device_class": "contact_sensor",
+    "capabilities": ["contact"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggbett-tuer-fenstersensor-smart__1420257_pe977237_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
-    }
+    },
+    "prices": [
+      { "store": "IKEA Online", "price": 19.49, "currency": "USD", "lastUpdated": "2026-01-26" },
+      { "store": "ContactSense", "price": 20.99, "currency": "USD", "lastUpdated": "2026-01-28" }
+    ]
   }
 ]

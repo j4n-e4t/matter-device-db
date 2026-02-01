@@ -7,11 +7,11 @@ import { DataTableFacetedFilter } from "./data-table-faceted-filter"
 import {
   protocolConfig,
   powerSupplyConfig,
-  deviceClassConfig,
+  capabilityConfig,
 } from "@/components/badges"
 import {
   getUniqueManufacturerIds,
-  getUniqueDeviceClasses,
+  getUniqueCapabilities,
   getUniquePowerSupplies,
   getUniqueProtocols,
   getManufacturerById,
@@ -50,12 +50,12 @@ export function DataTableSidebar<TData extends Device>({
     }
   })
 
-  const deviceClassOptions = getUniqueDeviceClasses(data).map((dc) => {
-    const config = deviceClassConfig[dc as keyof typeof deviceClassConfig]
+  const capabilityOptions = getUniqueCapabilities(data).map((cap) => {
+    const config = capabilityConfig[cap as keyof typeof capabilityConfig]
     const Icon = config?.icon
     return {
-      label: config?.label || dc,
-      value: dc,
+      label: config?.label || cap,
+      value: cap,
       icon: Icon ? <Icon className="h-4 w-4" /> : undefined,
       className: config?.className,
     }
@@ -100,13 +100,13 @@ export function DataTableSidebar<TData extends Device>({
             />
           </div>
         )}
-        {table.getColumn("device_class") && (
+        {table.getColumn("capabilities") && (
           <div className="space-y-2">
-            <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Category</div>
+            <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Capabilities</div>
             <DataTableFacetedFilter
-              column={table.getColumn("device_class")}
-              title="Category"
-              options={deviceClassOptions}
+              column={table.getColumn("capabilities")}
+              title="Capabilities"
+              options={capabilityOptions}
               value={filters.category}
               onChange={(value) => setFilters({ category: value.length > 0 ? value : null })}
             />

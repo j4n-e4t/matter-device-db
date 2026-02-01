@@ -6,17 +6,17 @@ import Link from "next/link"
 import { DataTableColumnHeader } from "./data-table-column-header"
 import {
   ProtocolBadge,
-  DeviceClassBadge,
+  CapabilityBadge,
   PowerSupplyBadge,
-  deviceClassConfig,
+  capabilityConfig,
 } from "@/components/badges"
 import { getManufacturerById } from "@/lib/devices"
 import type { Device } from "@/lib/types"
 
-// Re-export device class icons for use in sidebar filters
-export const deviceClassIcons = Object.fromEntries(
-  Object.entries(deviceClassConfig).map(([key, config]) => [key, config.icon])
-) as Record<string, typeof deviceClassConfig[keyof typeof deviceClassConfig]["icon"]>
+// Re-export capability icons for use in sidebar filters
+export const capabilityIcons = Object.fromEntries(
+  Object.entries(capabilityConfig).map(([key, config]) => [key, config.icon])
+) as Record<string, typeof capabilityConfig[keyof typeof capabilityConfig]["icon"]>
 
 export const columns: ColumnDef<Device>[] = [
   {
@@ -86,17 +86,25 @@ export const columns: ColumnDef<Device>[] = [
     },
   },
   {
-    accessorKey: "device_class",
+    accessorKey: "capabilities",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Category" />
+      <DataTableColumnHeader column={column} title="Capabilities" />
     ),
     cell: ({ row }) => {
-      const deviceClass = row.getValue("device_class") as string
-      return <DeviceClassBadge deviceClass={deviceClass} />
+      const capabilities = row.getValue("capabilities") as string[]
+      return (
+        <div className="flex flex-wrap gap-1">
+          {capabilities.map((capability) => (
+            <CapabilityBadge key={capability} capability={capability} />
+          ))}
+        </div>
+      )
     },
     filterFn: (row, id, value: string[]) => {
-      return value.includes(row.getValue(id))
+      const capabilities = row.getValue(id) as string[]
+      return value.some((v) => capabilities.includes(v))
     },
+    enableSorting: false,
   },
   {
     accessorKey: "protocols",

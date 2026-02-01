@@ -1,4 +1,4 @@
-export type DeviceClass =
+export type Capability =
   | 'light'
   | 'plug'
   | 'switch'
@@ -11,23 +11,31 @@ export type DeviceClass =
   | 'speaker'
   | 'climate'
   | 'remote'
-  | 'temperature_sensor'
-  | 'motion_sensor'
-  | 'water_leak_sensor'
-  | 'contact_sensor'
-  | 'light_sensor'
-  | 'air_quality_sensor'
+  | 'temperature'
+  | 'humidity'
+  | 'motion'
+  | 'water_leak'
+  | 'contact'
+  | 'brightness'
+  | 'air_quality'
   | 'other';
 
 export type Protocol = 'Matter' | 'Thread' | 'Zigbee' | 'Z-Wave' | 'WiFi' | 'Bluetooth';
 
 export type PowerSupply = 'mains' | 'battery' | 'poe' | 'usb';
 
+export interface DevicePrice {
+  store: string;
+  price: number;
+  currency: string;
+  lastUpdated?: string;
+}
+
 export interface Device {
   id: string;
   name: string;
   manufacturer_id: string;
-  device_class: DeviceClass;
+  capabilities: Capability[];
   protocols: Protocol[];
   releaseDate?: string;
   powerSupply?: PowerSupply;
@@ -37,6 +45,7 @@ export interface Device {
   meta?: {
     last_updated?: string;
   };
+  prices?: DevicePrice[];
 }
 
 export interface Manufacturer {
@@ -49,6 +58,6 @@ export interface Manufacturer {
 export interface FilterState {
   search: string;
   manufacturer: string;
-  device_class: DeviceClass;
+  capability: Capability;
   powerSupply: string;
 }

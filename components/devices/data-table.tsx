@@ -53,7 +53,7 @@ export function DataTable<TData extends Device, TValue>({
       result.push({ id: "manufacturer_id", value: filters.manufacturer })
     }
     if (filters.category.length > 0) {
-      result.push({ id: "device_class", value: filters.category })
+      result.push({ id: "capabilities", value: filters.category })
     }
     if (filters.protocol.length > 0) {
       result.push({ id: "protocols", value: filters.protocol })
