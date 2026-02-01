@@ -95,9 +95,9 @@ export function DataTable<TData extends Device, TValue>({
       <DataTableSidebar table={table} data={data} filters={filters} setFilters={setFilters} />
       <div className="flex-1 space-y-4">
         <DataTableToolbar table={table} filters={filters} setFilters={setFilters} />
-        <div className="rounded-md border">
+        <div className="rounded-md border overflow-auto max-h-[60vh] md:max-h-[70vh]">
           <Table>
-            <TableHeader>
+            <TableHeader className="sticky top-0 bg-background z-10">
               {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
