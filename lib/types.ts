@@ -24,13 +24,6 @@ export type Protocol = 'Matter' | 'Thread' | 'Zigbee' | 'Z-Wave' | 'WiFi' | 'Blu
 
 export type PowerSupply = 'mains' | 'battery' | 'poe' | 'usb';
 
-export interface DevicePrice {
-  store: string;
-  price: number;
-  currency: string;
-  lastUpdated?: string;
-}
-
 export interface Device {
   id: string;
   name: string;
@@ -45,7 +38,6 @@ export interface Device {
   meta?: {
     last_updated?: string;
   };
-  prices?: DevicePrice[];
 }
 
 export interface Manufacturer {

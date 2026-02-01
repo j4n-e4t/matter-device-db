@@ -10,7 +10,6 @@ import {
   GenericBadge,
 } from "@/components/badges"
 import { getAllDevices, getDeviceById, getManufacturerById, featureLabels } from "@/lib/devices"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export async function generateStaticParams() {
@@ -167,49 +166,6 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                 </div>
               )}
             </div>
-
-            {/* Pricing Table */}
-            {device.prices && device.prices.length > 0 && (
-              <div className="bg-card border rounded-lg">
-                <div className="p-4 border-b">
-                  <h2 className="text-base font-semibold">Store pricing</h2>
-                  <p className="text-sm text-muted-foreground">Compare current pricing across retailers.</p>
-                </div>
-                <div className="p-4">
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Store</TableHead>
-                        <TableHead>Price</TableHead>
-                        <TableHead>Last updated</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {device.prices.map((price) => (
-                        <TableRow key={`${device.id}-${price.store}`}>
-                          <TableCell className="font-medium">{price.store}</TableCell>
-                          <TableCell>
-                            {new Intl.NumberFormat("en-US", {
-                              style: "currency",
-                              currency: price.currency || "USD",
-                            }).format(price.price)}
-                          </TableCell>
-                          <TableCell className="text-muted-foreground">
-                            {price.lastUpdated
-                              ? new Date(price.lastUpdated).toLocaleDateString("en-US", {
-                                  year: "numeric",
-                                  month: "short",
-                                  day: "numeric",
-                                })
-                              : "—"}
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </div>
-              </div>
-            )}
 
             {/* Manufacturer Link */}
             {manufacturer?.website && (
