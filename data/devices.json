@@ -13,7 +13,7 @@
   },
   {
     "id": "ikea-timmerflotte",
-    "name": "Timmerflotte",
+    "name": "TIMMERFLOTTE Temperature Sensor",
     "manufacturer_id": "ikea",
     "device_class": "temperature_sensor",
     "protocols": ["thread", "bluetooth"],
@@ -25,7 +25,7 @@
   },
   {
     "id": "ikea-myggspray",
-    "name": "Myggspray Motion Sensor",
+    "name": "MYGGSPRAY Motion Sensor",
     "manufacturer_id": "ikea",
     "device_class": "motion_sensor",
     "protocols": ["thread", "bluetooth"],
@@ -37,7 +37,7 @@
   },
   {
     "id": "ikea-klippbok",
-    "name": "Klippbok",
+    "name": "KLIPPBOK Water Leak Sensor ",
     "manufacturer_id": "ikea",
     "device_class": "water_leak_sensor",
     "protocols": ["thread", "bluetooth"],
@@ -49,12 +49,24 @@
   },
   {
     "id": "ikea-bilresa",
-    "name": "Bilresa",
+    "name": "BILRESA Dual Button Remote",
     "manufacturer_id": "ikea",
     "device_class": "remote",
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/bilresa-fernbedienung-weiss-smart-dualschalter__1402959_pe969197_s5.jpg?f=s",
+    "meta": {
+      "last_updated": "2026-02-01"
+    }
+  },
+  {
+    "id": "ikea-myggbett",
+    "name": "MYGGBETT Contact Sensor",
+    "manufacturer_id": "ikea",
+    "device_class": "contact_sensor",
+    "protocols": ["thread", "bluetooth"],
+    "powerSupply": "battery",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/myggbett-tuer-fenstersensor-smart__1420257_pe977237_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
     }
