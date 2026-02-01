@@ -7,6 +7,7 @@ import {
   ProtocolBadge,
   CapabilityBadge,
   PowerSupplyBadge,
+  MatterSupportBadge,
   GenericBadge,
 } from "@/components/badges"
 import { getAllDevices, getDeviceById, getManufacturerById, featureLabels } from "@/lib/devices"
@@ -120,6 +121,16 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                 ))}
               </div>
             </div>
+
+            {/* Matter Support */}
+            {device.matterSupport && (
+              <div>
+                <h2 className="text-sm font-medium text-muted-foreground mb-2">Matter Support</h2>
+                <div className="flex flex-wrap gap-2">
+                  <MatterSupportBadge matterSupport={device.matterSupport} />
+                </div>
+              </div>
+            )}
 
             {/* Features */}
             {device.features && device.features.length > 0 && (

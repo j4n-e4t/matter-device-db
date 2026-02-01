@@ -91,6 +91,14 @@ export function getUniquePowerSupplies(devices: Device[]): string[] {
   return Array.from(supplies).sort();
 }
 
+export function getUniqueMatterSupport(devices: Device[]): string[] {
+  const supports = new Set<string>();
+  devices.forEach((d) => {
+    if (d.matterSupport) supports.add(d.matterSupport);
+  });
+  return Array.from(supports).sort();
+}
+
 export function getDeviceStats(devices: Device[]) {
   const allCapabilities = new Set<string>();
   devices.forEach((d) => d.capabilities.forEach((c) => allCapabilities.add(c)));
@@ -170,4 +178,9 @@ export const featureLabels: Record<string, string> = {
   humidity_sensor: 'Humidity',
   door_window_state: 'Door/Window',
   energy_measurement: 'Energy measurement',
+};
+
+export const matterSupportLabels: Record<string, string> = {
+  native: 'Native',
+  bridge: 'Bridge',
 };

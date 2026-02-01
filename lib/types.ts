@@ -24,6 +24,8 @@ export type Protocol = 'Matter' | 'Thread' | 'Zigbee' | 'Z-Wave' | 'WiFi' | 'Blu
 
 export type PowerSupply = 'mains' | 'battery' | 'poe' | 'usb';
 
+export type MatterSupport = 'native' | 'bridge';
+
 export interface Device {
   id: string;
   name: string;
@@ -32,6 +34,7 @@ export interface Device {
   protocols: Protocol[];
   releaseDate?: string;
   powerSupply?: PowerSupply;
+  matterSupport?: MatterSupport;
   supportsOTA?: boolean;
   features?: string[];
   imageUrl?: string;

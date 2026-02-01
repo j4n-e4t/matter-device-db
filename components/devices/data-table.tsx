@@ -61,6 +61,9 @@ export function DataTable<TData extends Device, TValue>({
     if (filters.power.length > 0) {
       result.push({ id: "powerSupply", value: filters.power })
     }
+    if (filters.matterSupport.length > 0) {
+      result.push({ id: "matterSupport", value: filters.matterSupport })
+    }
     return result
   }, [filters])
 

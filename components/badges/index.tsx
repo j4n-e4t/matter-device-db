@@ -14,12 +14,15 @@ import { cn } from "@/lib/utils"
 // Import configs from data folder
 import { protocolConfig, ThreadIcon, MatterIcon, type Protocol } from "@/data/protocols"
 import { capabilityConfig, type Capability } from "@/data/capabilities"
+import { matterSupportConfig, type MatterSupport } from "@/data/matter-support"
 
 // Re-export types and configs
 export type { Protocol } from "@/data/protocols"
 export type { Capability } from "@/data/capabilities"
+export type { MatterSupport } from "@/data/matter-support"
 export { protocolConfig } from "@/data/protocols"
 export { capabilityConfig } from "@/data/capabilities"
+export { matterSupportConfig } from "@/data/matter-support"
 
 // =============================================================================
 // Power Supply Configuration
@@ -122,6 +125,34 @@ export function PowerSupplyBadge({ powerSupply, showLabel = true, className }: P
     return (
       <Badge variant="outline" className={className}>
         {powerSupply}
+      </Badge>
+    )
+  }
+
+  const Icon = config.icon
+
+  return (
+    <Badge variant="outline" className={cn(config.className, className)}>
+      <Icon />
+      {showLabel && config.label}
+    </Badge>
+  )
+}
+
+interface MatterSupportBadgeProps {
+  matterSupport: string
+  showLabel?: boolean
+  className?: string
+}
+
+export function MatterSupportBadge({ matterSupport, showLabel = true, className }: MatterSupportBadgeProps) {
+  const key = matterSupport.toLowerCase() as MatterSupport
+  const config = matterSupportConfig[key]
+
+  if (!config) {
+    return (
+      <Badge variant="outline" className={className}>
+        {matterSupport}
       </Badge>
     )
   }

@@ -8,12 +8,14 @@ import {
   protocolConfig,
   powerSupplyConfig,
   capabilityConfig,
+  matterSupportConfig,
 } from "@/components/badges"
 import {
   getUniqueManufacturerIds,
   getUniqueCapabilities,
   getUniquePowerSupplies,
   getUniqueProtocols,
+  getUniqueMatterSupport,
   getManufacturerById,
 } from "@/lib/devices"
 import type { Device } from "@/lib/types"
@@ -37,7 +39,8 @@ export function DataTableSidebar<TData extends Device>({
     filters.manufacturer.length > 0 ||
     filters.category.length > 0 ||
     filters.protocol.length > 0 ||
-    filters.power.length > 0
+    filters.power.length > 0 ||
+    filters.matterSupport.length > 0
 
   const manufacturerOptions = getUniqueManufacturerIds(data).map((id) => {
     const manufacturer = getManufacturerById(id)
@@ -78,6 +81,17 @@ export function DataTableSidebar<TData extends Device>({
     return {
       label: config?.label || ps,
       value: ps,
+      icon: Icon ? <Icon className="h-4 w-4" /> : undefined,
+      className: config?.className,
+    }
+  })
+
+  const matterSupportOptions = getUniqueMatterSupport(data).map((ms) => {
+    const config = matterSupportConfig[ms as keyof typeof matterSupportConfig]
+    const Icon = config?.icon
+    return {
+      label: config?.label || ms,
+      value: ms,
       icon: Icon ? <Icon className="h-4 w-4" /> : undefined,
       className: config?.className,
     }
@@ -124,6 +138,18 @@ export function DataTableSidebar<TData extends Device>({
             />
           </div>
         )}
+        {table.getColumn("matterSupport") && matterSupportOptions.length > 0 && (
+          <div className="space-y-2">
+            <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Matter Support</div>
+            <DataTableFacetedFilter
+              column={table.getColumn("matterSupport")}
+              title="Matter Support"
+              options={matterSupportOptions}
+              value={filters.matterSupport}
+              onChange={(value) => setFilters({ matterSupport: value.length > 0 ? value : null })}
+            />
+          </div>
+        )}
         {table.getColumn("powerSupply") && powerSupplyOptions.length > 0 && (
           <div className="space-y-2">
             <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Power supply</div>
@@ -147,6 +173,7 @@ export function DataTableSidebar<TData extends Device>({
             category: null,
             protocol: null,
             power: null,
+            matterSupport: null,
           })}
           className="h-8 w-full justify-start px-2"
         >

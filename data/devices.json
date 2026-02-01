@@ -6,6 +6,7 @@
     "capabilities": ["light"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "mains",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1055-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-01-20"
@@ -18,6 +19,7 @@
     "capabilities": ["temperature", "humidity"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/timmerflotte-temperatur-feuchtigkeitssensor-smart__1402990_pe969208_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-01-20"
@@ -30,6 +32,7 @@
     "capabilities": ["motion", "brightness"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggspray-funk-bewegungsmelder-smart__1420239_pe977223_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
@@ -42,6 +45,7 @@
     "capabilities": ["water_leak"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/klippbok-wasserlecksensor-smart__1420217_pe977208_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
@@ -54,6 +58,7 @@
     "capabilities": ["remote"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/bilresa-fernbedienung-weiss-smart-dualschalter__1402959_pe969197_s5.jpg?f=s",
     "meta": {
       "last_updated": "2026-02-01"
@@ -66,7 +71,34 @@
     "capabilities": ["contact"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggbett-tuer-fenstersensor-smart__1420257_pe977237_s5.jpg?f=s",
+    "meta": {
+      "last_updated": "2026-02-01"
+    }
+  },
+  {
+    "id": "philips-hue-white-a19",
+    "name": "Hue White A19 E26",
+    "manufacturer_id": "philips-hue",
+    "capabilities": ["light"],
+    "protocols": ["zigbee"],
+    "powerSupply": "mains",
+    "matterSupport": "bridge",
+    "imageUrl": "https://www.assets.signify.com/is/image/Signify/046677563097_NA-IMS-en_US?wid=400&hei=400&qlt=80",
+    "meta": {
+      "last_updated": "2026-02-01"
+    }
+  },
+  {
+    "id": "philips-hue-motion-sensor",
+    "name": "Hue Motion Sensor",
+    "manufacturer_id": "philips-hue",
+    "capabilities": ["motion", "temperature", "brightness"],
+    "protocols": ["zigbee"],
+    "powerSupply": "battery",
+    "matterSupport": "bridge",
+    "imageUrl": "https://www.assets.signify.com/is/image/Signify/046677570972_NA-IMS-en_US?wid=400&hei=400&qlt=80",
     "meta": {
       "last_updated": "2026-02-01"
     }

@@ -8,7 +8,9 @@ import {
   ProtocolBadge,
   CapabilityBadge,
   PowerSupplyBadge,
+  MatterSupportBadge,
   capabilityConfig,
+  matterSupportConfig,
 } from "@/components/badges"
 import { getManufacturerById } from "@/lib/devices"
 import type { Device } from "@/lib/types"
@@ -123,6 +125,20 @@ export const columns: ColumnDef<Device>[] = [
     filterFn: (row, id, value: string[]) => {
       const protocols = row.getValue(id) as string[]
       return value.some((v) => protocols.includes(v))
+    },
+    enableSorting: false,
+  },
+  {
+    accessorKey: "matterSupport",
+    header: "Matter Support",
+    cell: ({ row }) => {
+      const matterSupport = row.getValue("matterSupport") as string | undefined
+      if (!matterSupport) return null
+      return <MatterSupportBadge matterSupport={matterSupport} />
+    },
+    filterFn: (row, id, value: string[]) => {
+      const ms = row.getValue(id) as string | undefined
+      return ms ? value.includes(ms) : false
     },
     enableSorting: false,
   },
