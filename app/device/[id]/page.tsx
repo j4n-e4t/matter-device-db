@@ -41,7 +41,7 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
 
   return (
     <div className="min-h-screen">
-      <header className="border-b bg-card">
+      <header className="sticky top-0 z-50 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-primary">
@@ -55,17 +55,17 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-8">
-        <Button variant="ghost" size="sm" asChild className="mb-6">
+      <main className="container mx-auto px-4 py-6 md:py-8">
+        <Button variant="ghost" size="sm" asChild className="mb-4 md:mb-6">
           <Link href="/">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to all devices
           </Link>
         </Button>
 
-        <div className="grid gap-8 md:grid-cols-[300px_1fr]">
-          {/* Device Image */}
-          <div className="bg-card border rounded-lg p-6 flex items-center justify-center aspect-square">
+        <div className="grid gap-6 md:gap-8 md:grid-cols-[300px_1fr]">
+          {/* Device Image - smaller on mobile */}
+          <div className="bg-card border rounded-lg p-4 md:p-6 flex items-center justify-center aspect-square max-w-[200px] mx-auto md:max-w-none md:mx-0">
             {device.imageUrl ? (
               <div className="relative w-full h-full">
                 <Image
@@ -73,7 +73,7 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                   alt={device.name}
                   fill
                   className="object-contain"
-                  sizes="300px"
+                  sizes="(max-width: 768px) 200px, 300px"
                   priority
                 />
               </div>
@@ -83,26 +83,26 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
           </div>
 
           {/* Device Details */}
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             {/* Header */}
-            <div>
-              <div className="flex items-center gap-3 mb-2">
+            <div className="text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
                 {manufacturer?.logo && (
                   <img
                     src={manufacturer.logo}
                     alt={manufacturer.name}
-                    className="w-8 h-8 object-contain rounded"
+                    className="w-6 h-6 md:w-8 md:h-8 object-contain rounded"
                   />
                 )}
-                <span className="text-muted-foreground">
+                <span className="text-sm md:text-base text-muted-foreground">
                   {manufacturer?.name || device.manufacturer_id}
                 </span>
               </div>
-              <h1 className="text-3xl font-bold">{device.name}</h1>
+              <h1 className="text-2xl md:text-3xl font-bold">{device.name}</h1>
             </div>
 
             {/* Badges Row */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2">
               {device.capabilities.map((capability) => (
                 <CapabilityBadge key={capability} capability={capability} />
               ))}
@@ -113,8 +113,8 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
 
             {/* Protocols */}
             <div>
-              <h2 className="text-sm font-medium text-muted-foreground mb-2">Protocols</h2>
-              <div className="flex flex-wrap gap-2">
+              <h2 className="text-sm font-medium text-muted-foreground mb-2 text-center md:text-left">Protocols</h2>
+              <div className="flex flex-wrap justify-center md:justify-start gap-2">
                 {device.protocols.map((protocol) => (
                   <ProtocolBadge key={protocol} protocol={protocol} />
                 ))}
@@ -124,8 +124,8 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
             {/* Features */}
             {device.features && device.features.length > 0 && (
               <div>
-                <h2 className="text-sm font-medium text-muted-foreground mb-2">Features</h2>
-                <div className="flex flex-wrap gap-2">
+                <h2 className="text-sm font-medium text-muted-foreground mb-2 text-center md:text-left">Features</h2>
+                <div className="flex flex-wrap justify-center md:justify-start gap-2">
                   {device.features.map((feature) => (
                     <GenericBadge key={feature} color="default">
                       {featureLabels[feature] || feature}
@@ -136,10 +136,10 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
             )}
 
             {/* Additional Info */}
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-3 md:gap-4 grid-cols-1 sm:grid-cols-2">
               {/* Release Date */}
               {device.releaseDate && (
-                <div className="flex items-center gap-2 text-sm">
+                <div className="flex items-center justify-center md:justify-start gap-2 text-sm">
                   <Calendar className="h-4 w-4 text-muted-foreground" />
                   <span className="text-muted-foreground">Released:</span>
                   <span>{new Date(device.releaseDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}</span>
@@ -148,7 +148,7 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
 
               {/* OTA Support */}
               {device.supportsOTA !== undefined && (
-                <div className="flex items-center gap-2 text-sm">
+                <div className="flex items-center justify-center md:justify-start gap-2 text-sm">
                   <Download className="h-4 w-4 text-muted-foreground" />
                   <span className="text-muted-foreground">OTA Updates:</span>
                   <span className={device.supportsOTA ? "text-green-600 dark:text-green-400" : "text-muted-foreground"}>
@@ -159,7 +159,7 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
 
               {/* Last Updated */}
               {device.meta?.last_updated && (
-                <div className="flex items-center gap-2 text-sm">
+                <div className="flex items-center justify-center md:justify-start gap-2 text-sm">
                   <Clock className="h-4 w-4 text-muted-foreground" />
                   <span className="text-muted-foreground">Last updated:</span>
                   <span>{new Date(device.meta.last_updated).toLocaleDateString()}</span>
@@ -169,8 +169,8 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
 
             {/* Manufacturer Link */}
             {manufacturer?.website && (
-              <div className="pt-4 border-t">
-                <Button variant="outline" asChild>
+              <div className="pt-4 border-t flex justify-center md:justify-start">
+                <Button variant="outline" asChild className="w-full sm:w-auto">
                   <a href={manufacturer.website} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Visit {manufacturer.name}
