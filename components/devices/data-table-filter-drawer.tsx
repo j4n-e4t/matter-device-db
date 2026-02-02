@@ -104,7 +104,7 @@ export function DataTableFilterDrawer<TData extends Device>({
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="outline" size="sm" className="h-9 gap-2">
+        <Button variant="outline" size="sm" className="h-9 w-full gap-2">
           <Filter className="h-4 w-4" />
           Filters
           {activeFilterCount > 0 && (

@@ -95,19 +95,17 @@ export function DataTable<TData extends Device, TValue>({
       <div className="hidden md:block">
         <DataTableSidebar table={table} data={data} filters={filters} setFilters={setFilters} />
       </div>
-      <div className="flex-1 space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="flex-1">
-            <DataTableToolbar table={table} filters={filters} setFilters={setFilters} />
-          </div>
-          {/* Mobile filter drawer - visible only on mobile */}
+      <div className="flex-1 space-y-4 min-w-0">
+        <div className="space-y-2 md:space-y-0">
+          <DataTableToolbar table={table} filters={filters} setFilters={setFilters} />
+          {/* Mobile filter drawer - visible only on mobile, below search */}
           <div className="md:hidden">
             <DataTableFilterDrawer table={table} data={data} filters={filters} setFilters={setFilters} />
           </div>
         </div>
 
         {/* Mobile table view - visible only on mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden overflow-y-auto">
           <DataTableMobile table={table} />
         </div>
 
