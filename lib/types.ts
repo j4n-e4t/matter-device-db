@@ -35,7 +35,7 @@ export interface Device {
   supportsOTA?: boolean;
   features?: string[];
   imageUrl?: string;
-  contributor?: string;
+  contributors?: string[];
   meta?: {
     last_updated?: string;
   };
@@ -46,6 +46,7 @@ export interface Manufacturer {
   name: string;
   website?: string;
   logo?: string;
+  contributors?: string[];
 }
 
 export interface FilterState {

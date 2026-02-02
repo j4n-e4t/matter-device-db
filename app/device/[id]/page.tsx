@@ -167,19 +167,26 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                 </div>
               )}
 
-              {/* Contributor */}
-              {device.contributor && (
-                <div className="flex items-center justify-center md:justify-start gap-2 text-sm">
-                  <User className="h-4 w-4 text-muted-foreground" />
-                  <span className="text-muted-foreground">Added by:</span>
-                  <a
-                    href={`https://github.com/${device.contributor}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    @{device.contributor}
-                  </a>
+              {/* Contributors */}
+              {device.contributors && device.contributors.length > 0 && (
+                <div className="flex items-center justify-center md:justify-start gap-2 text-sm flex-wrap">
+                  <User className="h-4 w-4 text-muted-foreground shrink-0" />
+                  <span className="text-muted-foreground shrink-0">Added by:</span>
+                  <span className="flex flex-wrap gap-1">
+                    {device.contributors.map((contributor, index) => (
+                      <span key={contributor}>
+                        <a
+                          href={`https://github.com/${contributor}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          @{contributor}
+                        </a>
+                        {index < device.contributors!.length - 1 && ","}
+                      </span>
+                    ))}
+                  </span>
                 </div>
               )}
 
