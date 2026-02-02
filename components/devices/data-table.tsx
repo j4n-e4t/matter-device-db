@@ -27,6 +27,8 @@ import {
 import { DataTablePagination } from "./data-table-pagination"
 import { DataTableToolbar } from "./data-table-toolbar"
 import { DataTableSidebar } from "./data-table-sidebar"
+import { DataTableMobile } from "./data-table-mobile"
+import { DataTableFilterDrawer } from "./data-table-filter-drawer"
 import { useTableFilters } from "@/lib/use-table-filters"
 import type { Device } from "@/lib/types"
 
@@ -89,10 +91,28 @@ export function DataTable<TData extends Device, TValue>({
 
   return (
     <div className="flex gap-6">
-      <DataTableSidebar table={table} data={data} filters={filters} setFilters={setFilters} />
+      {/* Desktop sidebar - hidden on mobile */}
+      <div className="hidden md:block">
+        <DataTableSidebar table={table} data={data} filters={filters} setFilters={setFilters} />
+      </div>
       <div className="flex-1 space-y-4">
-        <DataTableToolbar table={table} filters={filters} setFilters={setFilters} />
-        <div className="rounded-md border">
+        <div className="flex items-center gap-2">
+          <div className="flex-1">
+            <DataTableToolbar table={table} filters={filters} setFilters={setFilters} />
+          </div>
+          {/* Mobile filter drawer - visible only on mobile */}
+          <div className="md:hidden">
+            <DataTableFilterDrawer table={table} data={data} filters={filters} setFilters={setFilters} />
+          </div>
+        </div>
+
+        {/* Mobile table view - visible only on mobile */}
+        <div className="md:hidden">
+          <DataTableMobile table={table} />
+        </div>
+
+        {/* Desktop table view - hidden on mobile */}
+        <div className="hidden md:block rounded-md border">
           <Table>
             <TableHeader>
               {table.getHeaderGroups().map((headerGroup) => (
