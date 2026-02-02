@@ -18,7 +18,41 @@ export const capabilityIcons = Object.fromEntries(
   Object.entries(capabilityConfig).map(([key, config]) => [key, config.icon])
 ) as Record<string, typeof capabilityConfig[keyof typeof capabilityConfig]["icon"]>
 
+// Mobile column IDs for visibility management
+export const mobileColumnIds = ["device"] as const
+export const desktopColumnIds = ["imageUrl", "name", "manufacturer_id", "capabilities", "protocols", "powerSupply"] as const
+
 export const columns: ColumnDef<Device>[] = [
+  // Mobile-only combined column (image + name)
+  {
+    id: "device",
+    header: "Device",
+    cell: ({ row }) => {
+      const device = row.original
+      return (
+        <Link
+          href={`/device/${device.id}`}
+          className="flex items-center gap-3 py-1"
+        >
+          <div className="relative h-10 w-10 shrink-0">
+            <Image
+              src={device.imageUrl || ""}
+              alt={device.name}
+              fill
+              className="object-contain"
+              sizes="40px"
+            />
+          </div>
+          <span className="font-medium text-primary break-words min-w-0">
+            {device.name}
+          </span>
+        </Link>
+      )
+    },
+    enableSorting: false,
+    enableHiding: true,
+  },
+  // Desktop columns
   {
     accessorKey: "imageUrl",
     header: "",
@@ -39,7 +73,7 @@ export const columns: ColumnDef<Device>[] = [
       )
     },
     enableSorting: false,
-    enableHiding: false,
+    enableHiding: true,
   },
   {
     accessorKey: "name",
@@ -60,6 +94,7 @@ export const columns: ColumnDef<Device>[] = [
     filterFn: (row, id, value) => {
       return row.getValue<string>(id).toLowerCase().includes(value.toLowerCase())
     },
+    enableHiding: true,
   },
   {
     accessorKey: "manufacturer_id",
@@ -84,6 +119,7 @@ export const columns: ColumnDef<Device>[] = [
     filterFn: (row, id, value: string[]) => {
       return value.includes(row.getValue(id))
     },
+    enableHiding: true,
   },
   {
     accessorKey: "capabilities",
@@ -105,6 +141,7 @@ export const columns: ColumnDef<Device>[] = [
       return value.some((v) => capabilities.includes(v))
     },
     enableSorting: false,
+    enableHiding: true,
   },
   {
     accessorKey: "protocols",
@@ -125,6 +162,7 @@ export const columns: ColumnDef<Device>[] = [
       return value.some((v) => protocols.includes(v))
     },
     enableSorting: false,
+    enableHiding: true,
   },
   {
     accessorKey: "powerSupply",
@@ -138,6 +176,7 @@ export const columns: ColumnDef<Device>[] = [
       const ps = row.getValue(id) as string | undefined
       return ps ? value.includes(ps) : false
     },
-    enableSorting: true
+    enableSorting: true,
+    enableHiding: true,
   },
 ]

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -27,14 +27,30 @@ import {
 import { DataTablePagination } from "./data-table-pagination"
 import { DataTableToolbar } from "./data-table-toolbar"
 import { DataTableSidebar } from "./data-table-sidebar"
-import { DataTableMobile } from "./data-table-mobile"
 import { DataTableFilterDrawer } from "./data-table-filter-drawer"
 import { useTableFilters } from "@/lib/use-table-filters"
+import { mobileColumnIds, desktopColumnIds } from "./columns"
 import type { Device } from "@/lib/types"
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
   data: TData[]
+}
+
+// Hook to detect mobile screen size
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 767px)")
+    setIsMobile(mediaQuery.matches)
+
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    mediaQuery.addEventListener("change", handler)
+    return () => mediaQuery.removeEventListener("change", handler)
+  }, [])
+
+  return isMobile
 }
 
 export function DataTable<TData extends Device, TValue>({
@@ -43,7 +59,23 @@ export function DataTable<TData extends Device, TValue>({
 }: DataTableProps<TData, TValue>) {
   const [filters, setFilters] = useTableFilters()
   const [sorting, setSorting] = useState<SortingState>([])
-  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
+  const isMobile = useIsMobile()
+
+  // Set column visibility based on screen size
+  const columnVisibility = useMemo<VisibilityState>(() => {
+    if (isMobile) {
+      // On mobile: show only the combined "device" column
+      return {
+        device: true,
+        ...Object.fromEntries(desktopColumnIds.map((id) => [id, false])),
+      }
+    }
+    // On desktop: hide the combined column, show individual columns
+    return {
+      device: false,
+      ...Object.fromEntries(desktopColumnIds.map((id) => [id, true])),
+    }
+  }, [isMobile])
 
   // Derive columnFilters from nuqs state
   const columnFilters = useMemo<ColumnFiltersState>(() => {
@@ -75,7 +107,6 @@ export function DataTable<TData extends Device, TValue>({
       columnVisibility,
     },
     onSortingChange: setSorting,
-    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
@@ -104,15 +135,10 @@ export function DataTable<TData extends Device, TValue>({
           </div>
         </div>
 
-        {/* Mobile table view - visible only on mobile */}
-        <div className="md:hidden overflow-y-auto">
-          <DataTableMobile table={table} />
-        </div>
-
-        {/* Desktop table view - hidden on mobile */}
-        <div className="hidden md:block rounded-md border">
+        {/* Single table for both mobile and desktop */}
+        <div className="rounded-md border">
           <Table>
-            <TableHeader>
+            <TableHeader className={isMobile ? "sr-only" : ""}>
               {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
