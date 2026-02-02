@@ -35,7 +35,7 @@ export function DataTableToolbar<TData extends Device>({
 
   return (
     <div className="flex items-center justify-between gap-2">
-      <div className="relative flex-1 max-w-sm">
+      <div className="relative flex-1 md:max-w-sm">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         <Input
           ref={inputRef}
@@ -47,7 +47,9 @@ export function DataTableToolbar<TData extends Device>({
           className="pl-9"
         />
       </div>
-      <DataTableViewOptions table={table} />
+      <div className="hidden md:block">
+        <DataTableViewOptions table={table} />
+      </div>
     </div>
   )
 }
