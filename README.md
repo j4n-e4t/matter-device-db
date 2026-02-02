@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Matter Device Database
 
-## Getting Started
+![Screenshot](assets/page.png)
 
-First, run the development server:
+A community-driven catalog of Matter-compatible smart home devices. Browse devices, filter by capabilities, protocols, and brands.
+
+## Why?
+
+I was looking for a site just like this and couldn't find anything that had all the info, was up to date or remotely pleasant to use. That's why I built my own.
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+bun install
+
+# Run development server
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the database.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contributions are welcome! The easiest way to help is by adding devices you own or know about.
+For now, there isn't really a workflow or anything for PRs. Just make the change and open a PR. In the future, I might make this a bit more streamlined...
 
-## Learn More
+### Adding a Device
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork this repository
+2. Edit `data/devices.json` and add your device entry:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```json
+{
+  "id": "brand-product-name",
+  "name": "Product Display Name",
+  "brand_id": "brand",
+  "capabilities": ["light", "dimmer"],
+  "protocols": ["thread"],
+  "powerSupply": "mains",
+  "matterSupport": "native",
+  "imageUrl": "https://example.com/image.jpg",
+  "productUrl": "https://example.com/product",
+  "contributors": ["your-github-username"],
+  "meta": {
+    "last_updated": "2026-02-02"
+  }
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. If the brand doesn't exist, add it to `data/brands.json`
+4. Submit a pull request
 
-## Deploy on Vercel
+### Device Fields
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Field           | Required | Description                                     |
+| --------------- | -------- | ----------------------------------------------- |
+| `id`            | Yes      | Unique identifier (lowercase, hyphens)          |
+| `name`          | Yes      | Human-readable product name                     |
+| `brand_id`      | Yes      | Reference to brand in `brands.json`             |
+| `capabilities`  | Yes      | Array of device capabilities                    |
+| `protocols`     | Yes      | Supported protocols (thread, wifi, bluetooth)   |
+| `powerSupply`   | Yes      | Power source (mains, battery)                   |
+| `matterSupport` | Yes      | Support type (native, bridge)                   |
+| `imageUrl`      | No       | Product image URL                               |
+| `productUrl`    | No       | Official product page                           |
+| `contributors`  | Yes      | GitHub usernames who added/verified this device |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Important Note on Images: For now, I just included a URL to an asset on the internet. This is obviously bad practice and in the future, the images will be hosted on GitHub(?) or another CDN. For now, feel free to be as lazy as I was.
+
+### Capabilities
+
+See `data/capabilities.tsx` for the full list as it might change in the future.
+
+### Guidelines
+
+- Verify the device actually supports Matter before adding
+- Use official product images when possible
+- Include yourself in the `contributors` array
+- Update `meta.last_updated` when modifying entries
+
+## Development
+
+```bash
+bun run dev    # Start dev server
+bun run build  # Production build
+bun run lint   # Run linter
+```
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+- [TanStack Table](https://tanstack.com/table) - Data table
+
+## License
+
+MIT - See [LICENSE](LICENSE) for details.
