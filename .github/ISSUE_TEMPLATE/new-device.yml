@@ -1,0 +1,117 @@
+name: Add New Device
+description: Submit a Matter device to be added to the database
+title: "[Device] "
+labels: ["new-device"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a device! Fill out what you can...
+
+  - type: input
+    id: name
+    attributes:
+      label: Device Name
+      description: The product name as shown by the manufacturer
+      placeholder: e.g. IKEA DIRIGERA Hub
+    validations:
+      required: true
+
+  - type: input
+    id: brand
+    attributes:
+      label: Brand
+      placeholder: e.g. IKEA, Apple, Philips Hue
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: capabilities
+    attributes:
+      label: Capabilities
+      description: What can this device do?
+      options:
+        - label: Light
+        - label: Dimmer
+        - label: Color
+        - label: Switch / Outlet
+        - label: Temperature Sensor
+        - label: Humidity Sensor
+        - label: Motion Sensor
+        - label: Contact Sensor (door/window)
+        - label: Water Leak Sensor
+        - label: Lock
+        - label: Hub / Bridge
+        - label: Speaker
+        - label: Remote / Button
+        - label: Other (describe below)
+
+  - type: checkboxes
+    id: protocols
+    attributes:
+      label: Protocols
+      description: How does it connect?
+      options:
+        - label: Thread
+        - label: WiFi
+        - label: Bluetooth
+        - label: Zigbee (via bridge)
+        - label: Other / Unknown
+
+  - type: dropdown
+    id: power
+    attributes:
+      label: Power Supply
+      options:
+        - Mains (plugged in)
+        - Battery
+        - USB
+        - Unknown
+    validations:
+      required: false
+
+  - type: dropdown
+    id: matter_support
+    attributes:
+      label: Matter Support
+      description: How does it support Matter?
+      options:
+        - Native (built-in)
+        - Via Bridge
+        - Unknown
+    validations:
+      required: false
+
+  - type: input
+    id: product_url
+    attributes:
+      label: Product URL
+      description: Link to official product page
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: input
+    id: image_url
+    attributes:
+      label: Image URL
+      description: Link to a product image (optional)
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else we should know? Other capabilities, quirks, etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      options:
+        - label: I have verified this device supports Matter
+          required: true

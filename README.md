@@ -25,6 +25,8 @@ Open [http://localhost:3000](http://localhost:3000) to view the database.
 Contributions are welcome! The easiest way to help is by adding devices you own or know about.
 For now, there isn't really a workflow or anything for PRs. Just make the change and open a PR. In the future, I might make this a bit more streamlined...
 
+> **Not comfortable with JSON or PRs?** No problem - just [open an issue](../../issues/new?template=new-device.yml) and fill out the form so someone else can do it!
+
 ### Adding a Device
 
 1. Fork this repository
