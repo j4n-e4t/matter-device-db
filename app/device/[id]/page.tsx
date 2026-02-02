@@ -17,7 +17,7 @@ import {
   GenericBadge,
 } from "@/components/badges"
 import { Header } from "@/components/header"
-import { getAllDevices, getDeviceById, getManufacturerById, featureLabels } from "@/lib/devices"
+import { getAllDevices, getDeviceById, getBrandById, featureLabels } from "@/lib/devices"
 
 export async function generateStaticParams() {
   const devices = getAllDevices()
@@ -29,9 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const device = getDeviceById(id)
   if (!device) return { title: "Device Not Found" }
 
-  const manufacturer = getManufacturerById(device.manufacturer_id)
+  const brand = getBrandById(device.brand_id)
   return {
-    title: `${device.name} by ${manufacturer?.name || device.manufacturer_id} - Matter Device DB`,
+    title: `${device.name} by ${brand?.name || device.brand_id} - Matter Device DB`,
     description: `View details for ${device.name}, a device with ${device.capabilities.join(", ")} capabilities and ${device.protocols.join(", ")} support.`,
   }
 }
@@ -44,7 +44,7 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
     notFound()
   }
 
-  const manufacturer = getManufacturerById(device.manufacturer_id)
+  const brand = getBrandById(device.brand_id)
 
   return (
     <div className="min-h-screen">
@@ -82,15 +82,15 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
             {/* Header */}
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
-                {manufacturer?.logo && (
+                {brand?.logo && (
                   <img
-                    src={manufacturer.logo}
-                    alt={manufacturer.name}
+                    src={brand.logo}
+                    alt={brand.name}
                     className="w-6 h-6 md:w-8 md:h-8 object-contain rounded"
                   />
                 )}
                 <span className="text-sm md:text-base text-muted-foreground">
-                  {manufacturer?.name || device.manufacturer_id}
+                  {brand?.name || device.brand_id}
                 </span>
               </div>
               <h1 className="text-2xl md:text-3xl font-bold">{device.name}</h1>

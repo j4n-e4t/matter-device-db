@@ -189,15 +189,15 @@ export function MatterSupportBadge({ matterSupport, showLabel = true, className 
   )
 }
 
-interface ManufacturerBadgeProps {
+interface BrandBadgeProps {
   name: string
   logo?: string
   className?: string
 }
 
-export function ManufacturerBadge({ name, logo, className }: ManufacturerBadgeProps) {
+export function BrandBadge({ name, logo, className }: BrandBadgeProps) {
   return (
-    <Badge variant="outline" className={cn(badgeSemanticStyles.manufacturer, className)}>
+    <Badge variant="outline" className={cn(badgeSemanticStyles.brand, className)}>
       {logo && (
         <img
           src={logo}

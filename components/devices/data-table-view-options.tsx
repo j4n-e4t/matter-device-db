@@ -19,7 +19,7 @@ interface DataTableViewOptionsProps<TData> {
 const columnLabels: Record<string, string> = {
   imageUrl: "Image",
   name: "Name",
-  manufacturer_id: "Manufacturer",
+  brand_id: "Brand",
   capabilities: "Capabilities",
   protocols: "Protocols",
   powerSupply: "Power supply",

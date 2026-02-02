@@ -11,12 +11,12 @@ import {
   matterSupportConfig,
 } from "@/components/badges"
 import {
-  getUniqueManufacturerIds,
+  getUniqueBrandIds,
   getUniqueCapabilities,
   getUniquePowerSupplies,
   getUniqueProtocols,
   getUniqueMatterSupport,
-  getManufacturerById,
+  getBrandById,
 } from "@/lib/devices"
 import type { Device } from "@/lib/types"
 import type { TableFilters, SetTableFilters } from "@/lib/use-table-filters"
@@ -31,14 +31,14 @@ interface DataTableFiltersProps<TData> {
 }
 
 export function useFilterOptions<TData extends Device>(data: TData[]) {
-  const manufacturerOptions = getUniqueManufacturerIds(data).map((id) => {
-    const manufacturer = getManufacturerById(id)
+  const brandOptions = getUniqueBrandIds(data).map((id) => {
+    const brand = getBrandById(id)
     return {
-      label: manufacturer?.name || id,
+      label: brand?.name || id,
       value: id,
-      icon: manufacturer?.logo ? (
+      icon: brand?.logo ? (
         <img
-          src={manufacturer.logo}
+          src={brand.logo}
           alt=""
           className="h-4 w-4 object-contain rounded"
         />
@@ -91,7 +91,7 @@ export function useFilterOptions<TData extends Device>(data: TData[]) {
   })
 
   return {
-    manufacturerOptions,
+    brandOptions,
     capabilityOptions,
     protocolOptions,
     powerSupplyOptions,
@@ -108,14 +108,14 @@ export function DataTableFilters<TData extends Device>({
   resetVariant = "ghost",
 }: DataTableFiltersProps<TData>) {
   const isFiltered =
-    filters.manufacturer.length > 0 ||
+    filters.brand.length > 0 ||
     filters.category.length > 0 ||
     filters.protocol.length > 0 ||
     filters.power.length > 0 ||
     filters.matter.length > 0
 
   const {
-    manufacturerOptions,
+    brandOptions,
     capabilityOptions,
     protocolOptions,
     powerSupplyOptions,
@@ -124,7 +124,7 @@ export function DataTableFilters<TData extends Device>({
 
   const handleReset = () => {
     setFilters({
-      manufacturer: null,
+      brand: null,
       category: null,
       protocol: null,
       power: null,
@@ -134,18 +134,18 @@ export function DataTableFilters<TData extends Device>({
 
   return (
     <div className="flex flex-col gap-4">
-      {table.getColumn("manufacturer_id") && (
+      {table.getColumn("brand_id") && (
         <div className="space-y-2">
           <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-            Manufacturer
+            Brand
           </div>
           <DataTableFacetedFilter
-            column={table.getColumn("manufacturer_id")}
-            title="Manufacturer"
-            options={manufacturerOptions}
-            value={filters.manufacturer}
+            column={table.getColumn("brand_id")}
+            title="Brand"
+            options={brandOptions}
+            value={filters.brand}
             onChange={(value) =>
-              setFilters({ manufacturer: value.length > 0 ? value : null })
+              setFilters({ brand: value.length > 0 ? value : null })
             }
           />
         </div>

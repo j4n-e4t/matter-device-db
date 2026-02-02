@@ -89,8 +89,8 @@ export function DataTable<TData extends Device, TValue>({
     if (filters.search) {
       result.push({ id: "name", value: filters.search })
     }
-    if (filters.manufacturer.length > 0) {
-      result.push({ id: "manufacturer_id", value: filters.manufacturer })
+    if (filters.brand.length > 0) {
+      result.push({ id: "brand_id", value: filters.brand })
     }
     if (filters.category.length > 0) {
       result.push({ id: "capabilities", value: filters.category })

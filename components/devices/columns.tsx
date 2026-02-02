@@ -10,7 +10,7 @@ import {
   MatterSupportBadge,
   capabilityConfig,
 } from "@/components/badges"
-import { getManufacturerById } from "@/lib/devices"
+import { getBrandById } from "@/lib/devices"
 import type { Device } from "@/lib/types"
 
 // Re-export capability icons for use in sidebar filters
@@ -20,7 +20,7 @@ export const capabilityIcons = Object.fromEntries(
 
 // Mobile column IDs for visibility management
 export const mobileColumnIds = ["device"] as const
-export const desktopColumnIds = ["imageUrl", "name", "manufacturer_id", "capabilities", "protocols", "powerSupply", "matterSupport"] as const
+export const desktopColumnIds = ["imageUrl", "name", "brand_id", "capabilities", "protocols", "powerSupply", "matterSupport"] as const
 
 export const columns: ColumnDef<Device>[] = [
   // Mobile-only combined column (image + name)
@@ -96,20 +96,20 @@ export const columns: ColumnDef<Device>[] = [
     enableHiding: false,
   },
   {
-    accessorKey: "manufacturer_id",
-    header: "Manufacturer",
+    accessorKey: "brand_id",
+    header: "Brand",
     cell: ({ row }) => {
-      const manufacturer = getManufacturerById(row.getValue("manufacturer_id"))
+      const brand = getBrandById(row.getValue("brand_id"))
       return (
         <div className="flex items-center gap-2">
-          {manufacturer?.logo && (
+          {brand?.logo && (
             <img
-              src={manufacturer.logo}
-              alt={manufacturer.name}
+              src={brand.logo}
+              alt={brand.name}
               className="w-5 h-5 object-contain rounded"
             />
           )}
-          <span>{manufacturer?.name || row.getValue("manufacturer_id")}</span>
+          <span>{brand?.name || row.getValue("brand_id")}</span>
         </div>
       )
     },

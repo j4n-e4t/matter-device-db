@@ -2,7 +2,7 @@
   {
     "id": "ikea-kajplats-e27-1055-white",
     "name": "Kajplats E27 1055 White",
-    "manufacturer_id": "ikea",
+    "brand_id": "ikea",
     "capabilities": ["light"],
     "protocols": ["thread"],
     "powerSupply": "mains",
@@ -17,7 +17,7 @@
   {
     "id": "ikea-timmerflotte",
     "name": "TIMMERFLOTTE Temperature Sensor",
-    "manufacturer_id": "ikea",
+    "brand_id": "ikea",
     "capabilities": ["temperature", "humidity"],
     "protocols": ["thread"],
     "powerSupply": "battery",
@@ -31,7 +31,7 @@
   {
     "id": "ikea-myggspray",
     "name": "MYGGSPRAY Motion Sensor",
-    "manufacturer_id": "ikea",
+    "brand_id": "ikea",
     "capabilities": ["motion", "brightness"],
     "protocols": ["thread"],
     "powerSupply": "battery",
@@ -45,7 +45,7 @@
   {
     "id": "ikea-klippbok",
     "name": "KLIPPBOK Water Leak Sensor ",
-    "manufacturer_id": "ikea",
+    "brand_id": "ikea",
     "capabilities": ["water_leak"],
     "protocols": ["thread"],
     "powerSupply": "battery",
@@ -59,7 +59,7 @@
   {
     "id": "ikea-bilresa",
     "name": "BILRESA Dual Button Remote",
-    "manufacturer_id": "ikea",
+    "brand_id": "ikea",
     "capabilities": ["remote"],
     "protocols": ["thread"],
     "powerSupply": "battery",
@@ -73,7 +73,7 @@
   {
     "id": "ikea-myggbett",
     "name": "MYGGBETT Contact Sensor",
-    "manufacturer_id": "ikea",
+    "brand_id": "ikea",
     "capabilities": ["contact"],
     "protocols": ["thread"],
     "powerSupply": "battery",
@@ -87,7 +87,7 @@
   {
     "id": "ikea-kajplats-e27-1521-white",
     "name": "Kajplats E27 1521 White",
-    "manufacturer_id": "ikea",
+    "brand_id": "ikea",
     "capabilities": ["light"],
     "protocols": ["thread"],
     "powerSupply": "mains",
@@ -101,7 +101,7 @@
   {
     "id": "apple-homepod-2",
     "name": "Apple HomePod (2nd Gen)",
-    "manufacturer_id": "apple",
+    "brand_id": "apple",
     "capabilities": ["hub", "speaker", "temperature", "humidity"],
     "protocols": ["thread", "bluetooth", "wifi"],
     "powerSupply": "mains",
@@ -115,7 +115,7 @@
   {
     "id": "apple-homepod-mini",
     "name": "Apple HomePod Mini",
-    "manufacturer_id": "apple",
+    "brand_id": "apple",
     "capabilities": ["hub", "speaker", "temperature", "humidity"],
     "protocols": ["thread", "bluetooth", "wifi"],
     "powerSupply": "mains",

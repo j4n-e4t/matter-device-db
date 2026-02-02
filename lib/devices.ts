@@ -1,19 +1,19 @@
-import type { Device, FilterState, Manufacturer } from './types';
+import type { Device, FilterState, Brand } from './types';
 import devicesData from '@/data/devices.json';
-import manufacturersData from '@/data/manufacturers.json';
+import brandsData from '@/data/brands.json';
 
 
-// Manufacturers
-export function getAllManufacturers(): Manufacturer[] {
-  return manufacturersData as Manufacturer[];
+// Brands
+export function getAllBrands(): Brand[] {
+  return brandsData as Brand[];
 }
 
-export function getManufacturerById(id: string): Manufacturer | undefined {
-  return getAllManufacturers().find((m) => m.id === id);
+export function getBrandById(id: string): Brand | undefined {
+  return getAllBrands().find((m) => m.id === id);
 }
 
-export function getManufacturerName(id: string): string {
-  return getManufacturerById(id)?.name || id;
+export function getBrandName(id: string): string {
+  return getBrandById(id)?.name || id;
 }
 
 // Devices
@@ -34,17 +34,17 @@ export function filterDevices(devices: Device[], filters: FilterState): Device[]
     // Search filter
     if (filters.search) {
       const searchLower = filters.search.toLowerCase();
-      const manufacturerName = getManufacturerName(device.manufacturer_id);
+      const brandName = getBrandName(device.brand_id);
       const matchesSearch =
         device.name.toLowerCase().includes(searchLower) ||
-        manufacturerName.toLowerCase().includes(searchLower) ||
+        brandName.toLowerCase().includes(searchLower) ||
         device.features?.some((f) => f.toLowerCase().includes(searchLower));
 
       if (!matchesSearch) return false;
     }
 
-    // Manufacturer filter
-    if (filters.manufacturer && device.manufacturer_id !== filters.manufacturer) {
+    // Brand filter
+    if (filters.brand && device.brand_id !== filters.brand) {
       return false;
     }
 
@@ -62,11 +62,11 @@ export function filterDevices(devices: Device[], filters: FilterState): Device[]
   });
 }
 
-export function getUniqueManufacturerIds(devices: Device[]): string[] {
-  const ids = new Set(devices.map((d) => d.manufacturer_id));
+export function getUniqueBrandIds(devices: Device[]): string[] {
+  const ids = new Set(devices.map((d) => d.brand_id));
   return Array.from(ids).sort((a, b) => {
-    const nameA = getManufacturerName(a);
-    const nameB = getManufacturerName(b);
+    const nameA = getBrandName(a);
+    const nameB = getBrandName(b);
     return nameA.localeCompare(nameB);
   });
 }
@@ -107,7 +107,7 @@ export function getDeviceStats(devices: Device[]) {
     withMatter: devices.filter((d) => d.protocols.includes('Matter')).length,
     withThread: devices.filter((d) => d.protocols.includes('Thread')).length,
     batteryPowered: devices.filter((d) => d.powerSupply === 'battery').length,
-    manufacturers: new Set(devices.map((d) => d.manufacturer_id)).size,
+    brands: new Set(devices.map((d) => d.brand_id)).size,
     capabilities: allCapabilities.size,
   };
 }

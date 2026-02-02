@@ -44,7 +44,7 @@ function Badge({
 
 // =============================================================================
 // Semantic badge styles — use with variant="outline" for protocol, category,
-// power supply, manufacturer, and generic colored badges.
+// power supply, brand, and generic colored badges.
 // =============================================================================
 
 const semanticBase =
@@ -91,7 +91,7 @@ export const badgeSemanticStyles = {
     native: `${semanticBase} border-cyan-500 bg-cyan-500/10 text-cyan-600 dark:text-cyan-400`,
     bridge: `${semanticBase} border-amber-500 bg-amber-500/10 text-amber-600 dark:text-amber-400`,
   },
-  manufacturer: `${semanticBase} border-border gap-1.5`,
+  brand: `${semanticBase} border-border gap-1.5`,
   generic: {
     default: "border-border",
     blue: `${semanticBase} border-blue-500 bg-blue-500/10 text-blue-600 dark:text-blue-400`,

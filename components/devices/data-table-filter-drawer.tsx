@@ -29,7 +29,7 @@ export function DataTableFilterDrawer<TData extends Device>({
   setFilters,
 }: DataTableFilterDrawerProps<TData>) {
   const activeFilterCount =
-    filters.manufacturer.length +
+    filters.brand.length +
     filters.category.length +
     filters.protocol.length +
     filters.power.length

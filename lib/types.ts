@@ -29,7 +29,7 @@ export type MatterSupport = 'native' | 'bridge';
 export interface Device {
   id: string;
   name: string;
-  manufacturer_id: string;
+  brand_id: string;
   capabilities: Capability[];
   protocols: Protocol[];
   releaseDate?: string;
@@ -44,17 +44,16 @@ export interface Device {
   };
 }
 
-export interface Manufacturer {
+export interface Brand {
   id: string;
   name: string;
-  website?: string;
   logo?: string;
   contributors?: string[];
 }
 
 export interface FilterState {
   search: string;
-  manufacturer: string;
+  brand: string;
   capability: Capability;
   powerSupply: string;
 }

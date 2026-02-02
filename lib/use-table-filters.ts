@@ -4,7 +4,7 @@ import { useQueryStates, parseAsArrayOf, parseAsString } from "nuqs"
 
 export const filterParsers = {
   search: parseAsString.withDefault(""),
-  manufacturer: parseAsArrayOf(parseAsString).withDefault([]),
+  brand: parseAsArrayOf(parseAsString).withDefault([]),
   category: parseAsArrayOf(parseAsString).withDefault([]),
   protocol: parseAsArrayOf(parseAsString).withDefault([]),
   power: parseAsArrayOf(parseAsString).withDefault([]),
