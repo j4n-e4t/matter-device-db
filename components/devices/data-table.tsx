@@ -53,6 +53,22 @@ function useIsMobile() {
   return isMobile
 }
 
+// Get default visibility based on screen size
+function getDefaultVisibility(isMobile: boolean): VisibilityState {
+  if (isMobile) {
+    // On mobile: show only the combined "device" column
+    return {
+      device: true,
+      ...Object.fromEntries(desktopColumnIds.map((id) => [id, false])),
+    }
+  }
+  // On desktop: hide the combined column, show individual columns (matterSupport hidden by default)
+  return {
+    device: false,
+    ...Object.fromEntries(desktopColumnIds.map((id) => [id, id !== "matterSupport"])),
+  }
+}
+
 export function DataTable<TData extends Device, TValue>({
   columns,
   data,
@@ -60,21 +76,11 @@ export function DataTable<TData extends Device, TValue>({
   const [filters, setFilters] = useTableFilters()
   const [sorting, setSorting] = useState<SortingState>([])
   const isMobile = useIsMobile()
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(() => getDefaultVisibility(false))
 
-  // Set column visibility based on screen size
-  const columnVisibility = useMemo<VisibilityState>(() => {
-    if (isMobile) {
-      // On mobile: show only the combined "device" column
-      return {
-        device: true,
-        ...Object.fromEntries(desktopColumnIds.map((id) => [id, false])),
-      }
-    }
-    // On desktop: hide the combined column, show individual columns (matterSupport hidden by default)
-    return {
-      device: false,
-      ...Object.fromEntries(desktopColumnIds.map((id) => [id, id !== "matterSupport"])),
-    }
+  // Update visibility when switching between mobile/desktop
+  useEffect(() => {
+    setColumnVisibility(getDefaultVisibility(isMobile))
   }, [isMobile])
 
   // Derive columnFilters from nuqs state
@@ -107,6 +113,7 @@ export function DataTable<TData extends Device, TValue>({
       columnVisibility,
     },
     onSortingChange: setSorting,
+    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),

@@ -4,13 +4,14 @@
     "name": "Kajplats E27 1055 White",
     "manufacturer_id": "ikea",
     "capabilities": ["light"],
-    "protocols": ["thread", "bluetooth"],
+    "protocols": ["thread"],
     "powerSupply": "mains",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1055-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
+    "productUrl": "https://www.apple.com/shop/buy-homepod/homepod",
     "contributors": ["j4n-e4t"],
     "meta": {
-      "last_updated": "2026-01-20"
+      "last_updated": "2026-02-02"
     }
   },
   {
@@ -18,13 +19,13 @@
     "name": "TIMMERFLOTTE Temperature Sensor",
     "manufacturer_id": "ikea",
     "capabilities": ["temperature", "humidity"],
-    "protocols": ["thread", "bluetooth"],
+    "protocols": ["thread"],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/timmerflotte-temperatur-feuchtigkeitssensor-smart__1402990_pe969208_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
-      "last_updated": "2026-01-20"
+      "last_updated": "2026-02-02"
     }
   },
   {
@@ -32,13 +33,13 @@
     "name": "MYGGSPRAY Motion Sensor",
     "manufacturer_id": "ikea",
     "capabilities": ["motion", "brightness"],
-    "protocols": ["thread", "bluetooth"],
+    "protocols": ["thread"],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggspray-funk-bewegungsmelder-smart__1420239_pe977223_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
-      "last_updated": "2026-02-01"
+      "last_updated": "2026-02-02"
     }
   },
   {
@@ -46,13 +47,13 @@
     "name": "KLIPPBOK Water Leak Sensor ",
     "manufacturer_id": "ikea",
     "capabilities": ["water_leak"],
-    "protocols": ["thread", "bluetooth"],
+    "protocols": ["thread"],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/klippbok-wasserlecksensor-smart__1420217_pe977208_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
-      "last_updated": "2026-02-01"
+      "last_updated": "2026-02-02"
     }
   },
   {
@@ -60,13 +61,13 @@
     "name": "BILRESA Dual Button Remote",
     "manufacturer_id": "ikea",
     "capabilities": ["remote"],
-    "protocols": ["thread", "bluetooth"],
+    "protocols": ["thread"],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/bilresa-fernbedienung-weiss-smart-dualschalter__1402959_pe969197_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
-      "last_updated": "2026-02-01"
+      "last_updated": "2026-02-02"
     }
   },
   {
@@ -74,13 +75,55 @@
     "name": "MYGGBETT Contact Sensor",
     "manufacturer_id": "ikea",
     "capabilities": ["contact"],
-    "protocols": ["thread", "bluetooth"],
+    "protocols": ["thread"],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggbett-tuer-fenstersensor-smart__1420257_pe977237_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
-      "last_updated": "2026-02-01"
+      "last_updated": "2026-02-02"
+    }
+  },
+  {
+    "id": "ikea-kajplats-e27-1521-white",
+    "name": "Kajplats E27 1521 White",
+    "manufacturer_id": "ikea",
+    "capabilities": ["light"],
+    "protocols": ["thread"],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1521-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
+    "contributors": ["j4n-e4t"],
+    "meta": {
+      "last_updated": "2026-02-02"
+    }
+  },
+  {
+    "id": "apple-homepod-2",
+    "name": "Apple HomePod (2nd Gen)",
+    "manufacturer_id": "apple",
+    "capabilities": ["hub", "speaker", "temperature", "humidity"],
+    "protocols": ["thread", "bluetooth", "wifi"],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fseo%2FApple-HomePod-2nd-Generation-Midnight_13be9910-df07-4189-af70-109c47cab5b5.d03e94adb2427612412e11779717871d.png&f=1&nofb=1&ipt=f7a7d4efff8f3ad3910c8c15ef9dcefcfcf3db9af7b62fc3b133082143a7d6b5",
+    "contributors": ["j4n-e4t"],
+    "meta": {
+      "last_updated": "2026-02-02"
+    }
+  },
+  {
+    "id": "apple-homepod-mini",
+    "name": "Apple HomePod Mini",
+    "manufacturer_id": "apple",
+    "capabilities": ["hub", "speaker", "temperature", "humidity"],
+    "protocols": ["thread", "bluetooth", "wifi"],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.apple.com%2Fnewsroom%2Fimages%2F2024%2F07%2Fapple-introduces-homepod-mini-in-midnight%2Farticle%2FApple-HomePod-mini-midnight_inline.jpg.large_2x.jpg&f=1&nofb=1&ipt=b2d89e3bf4f7b9f01cb77a36543254dfba15cb546fed259183467cc061ac7363",
+    "contributors": ["j4n-e4t"],
+    "meta": {
+      "last_updated": "2026-02-02"
     }
   }
 ]

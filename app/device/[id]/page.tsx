@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Calendar, Download, ExternalLink, Clock, User } from "lucide-react"
+import { ArrowLeft, Calendar, Download, Clock, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Table,
@@ -209,17 +209,6 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
               )}
             </div>
 
-            {/* Manufacturer Link */}
-            {manufacturer?.website && (
-              <div className="pt-4 border-t flex justify-center md:justify-start">
-                <Button variant="outline" asChild className="w-full sm:w-auto">
-                  <a href={manufacturer.website} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Visit {manufacturer.name}
-                  </a>
-                </Button>
-              </div>
-            )}
           </div>
         </div>
       </main>
