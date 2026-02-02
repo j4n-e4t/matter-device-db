@@ -23,6 +23,7 @@ const columnLabels: Record<string, string> = {
   capabilities: "Capabilities",
   protocols: "Protocols",
   powerSupply: "Power supply",
+  matterSupport: "Matter Support",
 }
 
 export function DataTableViewOptions<TData>({

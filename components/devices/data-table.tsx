@@ -70,10 +70,10 @@ export function DataTable<TData extends Device, TValue>({
         ...Object.fromEntries(desktopColumnIds.map((id) => [id, false])),
       }
     }
-    // On desktop: hide the combined column, show individual columns
+    // On desktop: hide the combined column, show individual columns (matterSupport hidden by default)
     return {
       device: false,
-      ...Object.fromEntries(desktopColumnIds.map((id) => [id, true])),
+      ...Object.fromEntries(desktopColumnIds.map((id) => [id, id !== "matterSupport"])),
     }
   }, [isMobile])
 

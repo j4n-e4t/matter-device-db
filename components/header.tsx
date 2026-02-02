@@ -1,7 +1,6 @@
 import Link from "next/link"
-import { Github } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { GitHubStars } from "@/components/github-stars"
 
 export function Header() {
   return (
@@ -13,16 +12,8 @@ export function Header() {
             <span className="text-xl font-semibold">Device DB</span>
           </Link>
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="sm" asChild>
-              <a
-                href="https://github.com/your-org/matter-device-db"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="h-4 w-4" />
-              </a>
-            </Button>
             <ThemeToggle />
+            <GitHubStars />
           </div>
         </nav>
       </div>

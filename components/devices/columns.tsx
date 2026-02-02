@@ -3,7 +3,6 @@
 import { ColumnDef } from "@tanstack/react-table"
 import Image from "next/image"
 import Link from "next/link"
-import { DataTableColumnHeader } from "./data-table-column-header"
 import {
   ProtocolBadge,
   CapabilityBadge,
@@ -78,9 +77,7 @@ export const columns: ColumnDef<Device>[] = [
   },
   {
     accessorKey: "name",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Name" />
-    ),
+    header: "Name",
     cell: ({ row }) => {
       const device = row.original
       return (
@@ -95,13 +92,12 @@ export const columns: ColumnDef<Device>[] = [
     filterFn: (row, id, value) => {
       return row.getValue<string>(id).toLowerCase().includes(value.toLowerCase())
     },
-    enableHiding: true,
+    enableSorting: false,
+    enableHiding: false,
   },
   {
     accessorKey: "manufacturer_id",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Manufacturer" />
-    ),
+    header: "Manufacturer",
     cell: ({ row }) => {
       const manufacturer = getManufacturerById(row.getValue("manufacturer_id"))
       return (
@@ -120,13 +116,12 @@ export const columns: ColumnDef<Device>[] = [
     filterFn: (row, id, value: string[]) => {
       return value.includes(row.getValue(id))
     },
+    enableSorting: false,
     enableHiding: true,
   },
   {
     accessorKey: "capabilities",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Capabilities" />
-    ),
+    header: "Capabilities",
     cell: ({ row }) => {
       const capabilities = row.getValue("capabilities") as string[]
       return (
@@ -177,12 +172,12 @@ export const columns: ColumnDef<Device>[] = [
       const ps = row.getValue(id) as string | undefined
       return ps ? value.includes(ps) : false
     },
-    enableSorting: true,
+    enableSorting: false,
     enableHiding: true,
   },
   {
     accessorKey: "matterSupport",
-    header: "Matter",
+    header: "Matter Support",
     cell: ({ row }) => {
       const matterSupport = row.getValue("matterSupport") as string | undefined
       if (!matterSupport) return null
@@ -192,7 +187,7 @@ export const columns: ColumnDef<Device>[] = [
       const ms = row.getValue(id) as string | undefined
       return ms ? value.includes(ms) : false
     },
-    enableSorting: true,
+    enableSorting: false,
     enableHiding: true,
   },
 ]
