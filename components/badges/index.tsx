@@ -57,6 +57,31 @@ export const powerSupplyConfig: Record<PowerSupply, PowerSupplyConfig> = {
 }
 
 // =============================================================================
+// Matter Support Configuration
+// =============================================================================
+
+export type MatterSupport = "native" | "bridge"
+
+interface MatterSupportConfig {
+  icon: typeof MatterIcon
+  label: string
+  className: string
+}
+
+export const matterSupportConfig: Record<MatterSupport, MatterSupportConfig> = {
+  native: {
+    icon: MatterIcon,
+    label: "Native",
+    className: badgeSemanticStyles.matterSupport.native,
+  },
+  bridge: {
+    icon: MatterIcon,
+    label: "Bridge",
+    className: badgeSemanticStyles.matterSupport.bridge,
+  },
+}
+
+// =============================================================================
 // Badge Components
 // =============================================================================
 
@@ -122,6 +147,34 @@ export function PowerSupplyBadge({ powerSupply, showLabel = true, className }: P
     return (
       <Badge variant="outline" className={className}>
         {powerSupply}
+      </Badge>
+    )
+  }
+
+  const Icon = config.icon
+
+  return (
+    <Badge variant="outline" className={cn(config.className, className)}>
+      <Icon />
+      {showLabel && config.label}
+    </Badge>
+  )
+}
+
+interface MatterSupportBadgeProps {
+  matterSupport: string
+  showLabel?: boolean
+  className?: string
+}
+
+export function MatterSupportBadge({ matterSupport, showLabel = true, className }: MatterSupportBadgeProps) {
+  const key = matterSupport.toLowerCase() as MatterSupport
+  const config = matterSupportConfig[key]
+
+  if (!config) {
+    return (
+      <Badge variant="outline" className={className}>
+        {matterSupport}
       </Badge>
     )
   }

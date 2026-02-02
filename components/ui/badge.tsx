@@ -87,6 +87,10 @@ export const badgeSemanticStyles = {
     poe: `${semanticBase} border-indigo-500 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400`,
     usb: `${semanticBase} border-rose-500 bg-rose-500/10 text-rose-600 dark:text-rose-400`,
   },
+  matterSupport: {
+    native: `${semanticBase} border-cyan-500 bg-cyan-500/10 text-cyan-600 dark:text-cyan-400`,
+    bridge: `${semanticBase} border-amber-500 bg-amber-500/10 text-amber-600 dark:text-amber-400`,
+  },
   manufacturer: `${semanticBase} border-border gap-1.5`,
   generic: {
     default: "border-border",

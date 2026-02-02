@@ -8,6 +8,7 @@ import {
   ProtocolBadge,
   CapabilityBadge,
   PowerSupplyBadge,
+  MatterSupportBadge,
   capabilityConfig,
 } from "@/components/badges"
 import { getManufacturerById } from "@/lib/devices"
@@ -20,7 +21,7 @@ export const capabilityIcons = Object.fromEntries(
 
 // Mobile column IDs for visibility management
 export const mobileColumnIds = ["device"] as const
-export const desktopColumnIds = ["imageUrl", "name", "manufacturer_id", "capabilities", "protocols", "powerSupply"] as const
+export const desktopColumnIds = ["imageUrl", "name", "manufacturer_id", "capabilities", "protocols", "powerSupply", "matterSupport"] as const
 
 export const columns: ColumnDef<Device>[] = [
   // Mobile-only combined column (image + name)
@@ -175,6 +176,21 @@ export const columns: ColumnDef<Device>[] = [
     filterFn: (row, id, value: string[]) => {
       const ps = row.getValue(id) as string | undefined
       return ps ? value.includes(ps) : false
+    },
+    enableSorting: true,
+    enableHiding: true,
+  },
+  {
+    accessorKey: "matterSupport",
+    header: "Matter",
+    cell: ({ row }) => {
+      const matterSupport = row.getValue("matterSupport") as string | undefined
+      if (!matterSupport) return null
+      return <MatterSupportBadge matterSupport={matterSupport} />
+    },
+    filterFn: (row, id, value: string[]) => {
+      const ms = row.getValue(id) as string | undefined
+      return ms ? value.includes(ms) : false
     },
     enableSorting: true,
     enableHiding: true,

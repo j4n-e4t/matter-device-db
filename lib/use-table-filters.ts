@@ -8,6 +8,7 @@ export const filterParsers = {
   category: parseAsArrayOf(parseAsString).withDefault([]),
   protocol: parseAsArrayOf(parseAsString).withDefault([]),
   power: parseAsArrayOf(parseAsString).withDefault([]),
+  matter: parseAsArrayOf(parseAsString).withDefault([]),
 }
 
 export function useTableFilters() {

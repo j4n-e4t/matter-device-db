@@ -13,6 +13,7 @@ import {
   ProtocolBadge,
   CapabilityBadge,
   PowerSupplyBadge,
+  MatterSupportBadge,
   GenericBadge,
 } from "@/components/badges"
 import { Header } from "@/components/header"
@@ -124,6 +125,14 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                       <TableCell className="font-medium text-muted-foreground">Power Supply</TableCell>
                       <TableCell>
                         <PowerSupplyBadge powerSupply={device.powerSupply} />
+                      </TableCell>
+                    </TableRow>
+                  )}
+                  {device.matterSupport && (
+                    <TableRow>
+                      <TableCell className="font-medium text-muted-foreground">Matter Support</TableCell>
+                      <TableCell>
+                        <MatterSupportBadge matterSupport={device.matterSupport} />
                       </TableCell>
                     </TableRow>
                   )}

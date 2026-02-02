@@ -6,6 +6,7 @@
     "capabilities": ["light"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "mains",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1055-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
@@ -19,6 +20,7 @@
     "capabilities": ["temperature", "humidity"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/timmerflotte-temperatur-feuchtigkeitssensor-smart__1402990_pe969208_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
@@ -32,6 +34,7 @@
     "capabilities": ["motion", "brightness"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggspray-funk-bewegungsmelder-smart__1420239_pe977223_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
@@ -45,6 +48,7 @@
     "capabilities": ["water_leak"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/klippbok-wasserlecksensor-smart__1420217_pe977208_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
@@ -58,6 +62,7 @@
     "capabilities": ["remote"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/bilresa-fernbedienung-weiss-smart-dualschalter__1402959_pe969197_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
@@ -71,6 +76,7 @@
     "capabilities": ["contact"],
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
+    "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggbett-tuer-fenstersensor-smart__1420257_pe977237_s5.jpg?f=s",
     "contributors": ["j4n-e4t"],
     "meta": {
