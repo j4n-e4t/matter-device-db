@@ -35,13 +35,17 @@ export const columns: ColumnDef<Device>[] = [
           className="flex items-center gap-3 py-1"
         >
           <div className="relative h-10 w-10 shrink-0">
-            <Image
-              src={device.imageUrl || ""}
-              alt={device.name}
-              fill
-              className="object-contain"
-              sizes="40px"
-            />
+            {device.imageUrl ? (
+              <Image
+                src={device.imageUrl}
+                alt={device.name}
+                fill
+                className="object-contain"
+                sizes="40px"
+              />
+            ) : (
+              <div className="h-full w-full bg-muted rounded" />
+            )}
           </div>
           <span className="font-medium text-primary break-words min-w-0">
             {device.name}
@@ -60,15 +64,17 @@ export const columns: ColumnDef<Device>[] = [
       const device = row.original
       return (
         <div className="w-12 h-12 relative flex items-center justify-center">
-
-          <Image
-            src={device.imageUrl || ''}
-            alt={device.name}
-            fill
-            className="object-contain"
-            sizes="48px"
-          />
-
+          {device.imageUrl ? (
+            <Image
+              src={device.imageUrl}
+              alt={device.name}
+              fill
+              className="object-contain"
+              sizes="48px"
+            />
+          ) : (
+            <div className="h-full w-full bg-muted rounded" />
+          )}
         </div>
       )
     },

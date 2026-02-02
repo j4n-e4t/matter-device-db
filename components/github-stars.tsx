@@ -36,6 +36,7 @@ export function GitHubStars() {
         href={REPO_URL}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="View on GitHub"
         className="flex items-center gap-1.5"
       >
         <Github className="h-4 w-4" />

@@ -29,7 +29,7 @@ import { DataTableToolbar } from "./data-table-toolbar"
 import { DataTableSidebar } from "./data-table-sidebar"
 import { DataTableFilterDrawer } from "./data-table-filter-drawer"
 import { useTableFilters } from "@/lib/use-table-filters"
-import { mobileColumnIds, desktopColumnIds } from "./columns"
+import { desktopColumnIds } from "./columns"
 import type { Device } from "@/lib/types"
 
 interface DataTableProps<TData, TValue> {
@@ -39,7 +39,12 @@ interface DataTableProps<TData, TValue> {
 
 // Hook to detect mobile screen size
 function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
+      return false
+    }
+    return window.matchMedia("(max-width: 767px)").matches
+  })
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 767px)")
@@ -89,17 +94,20 @@ export function DataTable<TData extends Device, TValue>({
     if (filters.search) {
       result.push({ id: "name", value: filters.search })
     }
-    if (filters.brand.length > 0) {
+    if (filters.brand && filters.brand.length > 0) {
       result.push({ id: "brand_id", value: filters.brand })
     }
-    if (filters.category.length > 0) {
+    if (filters.category && filters.category.length > 0) {
       result.push({ id: "capabilities", value: filters.category })
     }
-    if (filters.protocol.length > 0) {
+    if (filters.protocol && filters.protocol.length > 0) {
       result.push({ id: "protocols", value: filters.protocol })
     }
-    if (filters.power.length > 0) {
+    if (filters.power && filters.power.length > 0) {
       result.push({ id: "powerSupply", value: filters.power })
+    }
+    if (filters.matter && filters.matter.length > 0) {
+      result.push({ id: "matterSupport", value: filters.matter })
     }
     return result
   }, [filters])
@@ -178,7 +186,7 @@ export function DataTable<TData extends Device, TValue>({
               ) : (
                 <TableRow>
                   <TableCell
-                    colSpan={columns.length}
+                    colSpan={table.getVisibleLeafColumns().length}
                     className="h-24 text-center"
                   >
                     No devices found.

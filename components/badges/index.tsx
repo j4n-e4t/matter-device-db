@@ -121,7 +121,15 @@ interface CapabilityBadgeProps {
 
 export function CapabilityBadge({ capability, showLabel = true, className }: CapabilityBadgeProps) {
   const key = capability.toLowerCase() as Capability
-  const config = capabilityConfig[key] || capabilityConfig.other
+  const config = capabilityConfig[key]
+
+  if (!config) {
+    return (
+      <Badge variant="outline" className={className}>
+        {capability}
+      </Badge>
+    )
+  }
 
   const Icon = config.icon
 

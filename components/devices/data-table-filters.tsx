@@ -108,11 +108,12 @@ export function DataTableFilters<TData extends Device>({
   resetVariant = "ghost",
 }: DataTableFiltersProps<TData>) {
   const isFiltered =
-    filters.brand.length > 0 ||
-    filters.category.length > 0 ||
-    filters.protocol.length > 0 ||
-    filters.power.length > 0 ||
-    filters.matter.length > 0
+    (filters.brand?.length ?? 0) > 0 ||
+    (filters.category?.length ?? 0) > 0 ||
+    (filters.protocol?.length ?? 0) > 0 ||
+    (filters.power?.length ?? 0) > 0 ||
+    (filters.matter?.length ?? 0) > 0 ||
+    (filters.search?.length ?? 0) > 0
 
   const {
     brandOptions,
@@ -129,6 +130,7 @@ export function DataTableFilters<TData extends Device>({
       protocol: null,
       power: null,
       matter: null,
+      search: null,
     })
   }
 
@@ -143,7 +145,7 @@ export function DataTableFilters<TData extends Device>({
             column={table.getColumn("brand_id")}
             title="Brand"
             options={brandOptions}
-            value={filters.brand}
+            value={filters.brand ?? []}
             onChange={(value) =>
               setFilters({ brand: value.length > 0 ? value : null })
             }
@@ -159,7 +161,7 @@ export function DataTableFilters<TData extends Device>({
             column={table.getColumn("capabilities")}
             title="Capabilities"
             options={capabilityOptions}
-            value={filters.category}
+            value={filters.category ?? []}
             onChange={(value) =>
               setFilters({ category: value.length > 0 ? value : null })
             }
@@ -175,7 +177,7 @@ export function DataTableFilters<TData extends Device>({
             column={table.getColumn("protocols")}
             title="Protocol"
             options={protocolOptions}
-            value={filters.protocol}
+            value={filters.protocol ?? []}
             onChange={(value) =>
               setFilters({ protocol: value.length > 0 ? value : null })
             }
@@ -191,7 +193,7 @@ export function DataTableFilters<TData extends Device>({
             column={table.getColumn("powerSupply")}
             title="Power supply"
             options={powerSupplyOptions}
-            value={filters.power}
+            value={filters.power ?? []}
             onChange={(value) =>
               setFilters({ power: value.length > 0 ? value : null })
             }
@@ -207,7 +209,7 @@ export function DataTableFilters<TData extends Device>({
             column={table.getColumn("matterSupport")}
             title="Matter support"
             options={matterSupportOptions}
-            value={filters.matter}
+            value={filters.matter ?? []}
             onChange={(value) =>
               setFilters({ matter: value.length > 0 ? value : null })
             }
