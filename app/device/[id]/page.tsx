@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Calendar, Download, ExternalLink, Clock, User } from "lucide-react"
+import { ArrowLeft, Calendar, Download, ExternalLink, Clock, User, ShoppingBag } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Table,
@@ -18,6 +18,7 @@ import {
 } from "@/components/badges"
 import { Header } from "@/components/header"
 import { getAllDevices, getDeviceById, getManufacturerById, featureLabels } from "@/lib/devices"
+import { getStoreConfigByName } from "@/data/stores"
 
 export async function generateStaticParams() {
   const devices = getAllDevices()
@@ -218,6 +219,35 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                     Visit {manufacturer.name}
                   </a>
                 </Button>
+              </div>
+            )}
+
+            {/* Store URLs */}
+            {device.storeUrls && device.storeUrls.length > 0 && (
+              <div className="pt-4 border-t">
+                <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+                  <ShoppingBag className="h-4 w-4 text-muted-foreground" />
+                  <h2 className="text-sm font-medium text-muted-foreground">Where to Buy</h2>
+                </div>
+                <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                  {device.storeUrls.map((store, index) => {
+                    const config = getStoreConfigByName(store.name)
+                    const Icon = config.icon
+                    return (
+                      <a
+                        key={index}
+                        href={store.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-2 px-3 py-2 rounded-md border text-sm font-medium transition-colors ${config.color}`}
+                      >
+                        <Icon className="h-4 w-4" />
+                        {store.name}
+                        <ExternalLink className="h-3 w-3 opacity-50" />
+                      </a>
+                    )
+                  })}
+                </div>
               </div>
             )}
           </div>

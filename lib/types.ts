@@ -26,6 +26,11 @@ export type PowerSupply = 'mains' | 'battery' | 'poe' | 'usb';
 
 export type MatterSupport = 'native' | 'bridge';
 
+export interface StoreUrl {
+  name: string;
+  url: string;
+}
+
 export interface Device {
   id: string;
   name: string;
@@ -38,6 +43,7 @@ export interface Device {
   supportsOTA?: boolean;
   features?: string[];
   imageUrl?: string;
+  storeUrls?: StoreUrl[];
   contributors?: string[];
   meta?: {
     last_updated?: string;
