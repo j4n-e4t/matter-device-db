@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ikea",
+    "name": "IKEA",
+    "website": "https://www.ikea.com",
+    "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplay-lh.googleusercontent.com%2FWcxYllfgoxETeQlanB9M8Ao32t5hELfOklazZ01eqQwu1QpMjirQyEq7WZjxAIcqjQzW&f=1&nofb=1&ipt=d68ae47716ab44ec71feaf645beeb276251ffe0921c0c24cdb217a8154910807"
+  },
+  {
+    "id": "philips-hue",
+    "name": "Philips Hue",
+    "website": "https://www.philips.com",
+    "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fspaceboy.io%2Fwp-content%2Fuploads%2F2020%2F07%2Fphilips-hue-logo-01.png&f=1&nofb=1&ipt=b152b0490b557857f05edfd3179c3e968582b965bda04a2e9f84db333b6d939c"
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "website": "https://www.apple.com",
+    "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.osxdaily.com%2Fwp-content%2Fuploads%2F2013%2F07%2Fapple-logo.gif&f=1&nofb=1&ipt=9b5b38297dd01ed2f10bc5796870debfbb9a9783f43d75c4446c82fb6b7b2437"
+  }
+]

@@ -57,6 +57,31 @@ export const powerSupplyConfig: Record<PowerSupply, PowerSupplyConfig> = {
 }
 
 // =============================================================================
+// Matter Support Configuration
+// =============================================================================
+
+export type MatterSupport = "native" | "bridge"
+
+interface MatterSupportConfig {
+  icon: typeof MatterIcon
+  label: string
+  className: string
+}
+
+export const matterSupportConfig: Record<MatterSupport, MatterSupportConfig> = {
+  native: {
+    icon: MatterIcon,
+    label: "Native",
+    className: badgeSemanticStyles.matterSupport.native,
+  },
+  bridge: {
+    icon: MatterIcon,
+    label: "Bridge",
+    className: badgeSemanticStyles.matterSupport.bridge,
+  },
+}
+
+// =============================================================================
 // Badge Components
 // =============================================================================
 
@@ -96,7 +121,15 @@ interface CapabilityBadgeProps {
 
 export function CapabilityBadge({ capability, showLabel = true, className }: CapabilityBadgeProps) {
   const key = capability.toLowerCase() as Capability
-  const config = capabilityConfig[key] || capabilityConfig.other
+  const config = capabilityConfig[key]
+
+  if (!config) {
+    return (
+      <Badge variant="outline" className={className}>
+        {capability}
+      </Badge>
+    )
+  }
 
   const Icon = config.icon
 
@@ -136,15 +169,43 @@ export function PowerSupplyBadge({ powerSupply, showLabel = true, className }: P
   )
 }
 
-interface ManufacturerBadgeProps {
+interface MatterSupportBadgeProps {
+  matterSupport: string
+  showLabel?: boolean
+  className?: string
+}
+
+export function MatterSupportBadge({ matterSupport, showLabel = true, className }: MatterSupportBadgeProps) {
+  const key = matterSupport.toLowerCase() as MatterSupport
+  const config = matterSupportConfig[key]
+
+  if (!config) {
+    return (
+      <Badge variant="outline" className={className}>
+        {matterSupport}
+      </Badge>
+    )
+  }
+
+  const Icon = config.icon
+
+  return (
+    <Badge variant="outline" className={cn(config.className, className)}>
+      <Icon />
+      {showLabel && config.label}
+    </Badge>
+  )
+}
+
+interface BrandBadgeProps {
   name: string
   logo?: string
   className?: string
 }
 
-export function ManufacturerBadge({ name, logo, className }: ManufacturerBadgeProps) {
+export function BrandBadge({ name, logo, className }: BrandBadgeProps) {
   return (
-    <Badge variant="outline" className={cn(badgeSemanticStyles.manufacturer, className)}>
+    <Badge variant="outline" className={cn(badgeSemanticStyles.brand, className)}>
       {logo && (
         <img
           src={logo}

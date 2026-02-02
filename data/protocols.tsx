@@ -36,7 +36,7 @@ export function MatterIcon({ className }: { className?: string }) {
   )
 }
 
-export type Protocol = "thread" | "bluetooth" | "wifi" | "zigbee" | "zwave" | "matter"
+export type Protocol = "thread" | "bluetooth" | "wifi" | "zigbee"
 
 export interface ProtocolConfig {
   icon: React.ComponentType<{ className?: string }>
@@ -64,15 +64,5 @@ export const protocolConfig: Record<Protocol, ProtocolConfig> = {
     icon: Radio,
     label: "Zigbee",
     className: badgeSemanticStyles.protocol.zigbee,
-  },
-  zwave: {
-    icon: Radio,
-    label: "Z-Wave",
-    className: badgeSemanticStyles.protocol.zwave,
-  },
-  matter: {
-    icon: MatterIcon,
-    label: "Matter",
-    className: badgeSemanticStyles.protocol.matter,
-  },
+  }
 }

@@ -24,32 +24,36 @@ export type Protocol = 'Matter' | 'Thread' | 'Zigbee' | 'Z-Wave' | 'WiFi' | 'Blu
 
 export type PowerSupply = 'mains' | 'battery' | 'poe' | 'usb';
 
+export type MatterSupport = 'native' | 'bridge';
+
 export interface Device {
   id: string;
   name: string;
-  manufacturer_id: string;
+  brand_id: string;
   capabilities: Capability[];
   protocols: Protocol[];
   releaseDate?: string;
   powerSupply?: PowerSupply;
+  matterSupport?: MatterSupport;
   supportsOTA?: boolean;
   features?: string[];
   imageUrl?: string;
+  contributors?: string[];
   meta?: {
     last_updated?: string;
   };
 }
 
-export interface Manufacturer {
+export interface Brand {
   id: string;
   name: string;
-  website?: string;
   logo?: string;
+  contributors?: string[];
 }
 
 export interface FilterState {
   search: string;
-  manufacturer: string;
+  brand: string;
   capability: Capability;
   powerSupply: string;
 }

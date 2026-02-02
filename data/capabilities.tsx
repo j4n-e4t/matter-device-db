@@ -17,21 +17,15 @@ import {
   Wind,
   Gamepad2,
   type LucideIcon,
+  Brain,
 } from "lucide-react"
 import { badgeSemanticStyles } from "@/components/ui/badge"
 
 export type Capability =
   | "light"
-  | "plug"
-  | "switch"
-  | "lock"
-  | "thermostat"
-  | "camera"
   | "hub"
   | "bridge"
-  | "blind"
   | "speaker"
-  | "climate"
   | "remote"
   | "temperature"
   | "humidity"
@@ -39,8 +33,6 @@ export type Capability =
   | "water_leak"
   | "contact"
   | "brightness"
-  | "air_quality"
-  | "other"
 
 export interface CapabilityConfig {
   icon: LucideIcon
@@ -54,33 +46,8 @@ export const capabilityConfig: Record<Capability, CapabilityConfig> = {
     label: "Light",
     className: badgeSemanticStyles.category.light,
   },
-  plug: {
-    icon: PlugIcon,
-    label: "Plug",
-    className: badgeSemanticStyles.category.plug,
-  },
-  switch: {
-    icon: ToggleLeft,
-    label: "Switch",
-    className: badgeSemanticStyles.category.switch,
-  },
-  lock: {
-    icon: Lock,
-    label: "Lock",
-    className: badgeSemanticStyles.category.lock,
-  },
-  thermostat: {
-    icon: Thermometer,
-    label: "Thermostat",
-    className: badgeSemanticStyles.category.thermostat,
-  },
-  camera: {
-    icon: Camera,
-    label: "Camera",
-    className: badgeSemanticStyles.category.camera,
-  },
   hub: {
-    icon: Box,
+    icon: Brain,
     label: "Hub",
     className: badgeSemanticStyles.category.hub,
   },
@@ -89,20 +56,10 @@ export const capabilityConfig: Record<Capability, CapabilityConfig> = {
     label: "Bridge",
     className: badgeSemanticStyles.category.bridge,
   },
-  blind: {
-    icon: Blinds,
-    label: "Blind",
-    className: badgeSemanticStyles.category.blind,
-  },
   speaker: {
     icon: Speaker,
     label: "Speaker",
     className: badgeSemanticStyles.category.speaker,
-  },
-  climate: {
-    icon: Snowflake,
-    label: "Climate",
-    className: badgeSemanticStyles.category.climate,
   },
   remote: {
     icon: Gamepad2,
@@ -138,15 +95,5 @@ export const capabilityConfig: Record<Capability, CapabilityConfig> = {
     icon: Sun,
     label: "Brightness",
     className: badgeSemanticStyles.category.brightness,
-  },
-  air_quality: {
-    icon: Wind,
-    label: "Air Quality",
-    className: badgeSemanticStyles.category.air_quality,
-  },
-  other: {
-    icon: Package,
-    label: "Other",
-    className: badgeSemanticStyles.category.other,
-  },
+  }
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, useEffect } from "react"
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -27,12 +27,51 @@ import {
 import { DataTablePagination } from "./data-table-pagination"
 import { DataTableToolbar } from "./data-table-toolbar"
 import { DataTableSidebar } from "./data-table-sidebar"
+import { DataTableFilterDrawer } from "./data-table-filter-drawer"
 import { useTableFilters } from "@/lib/use-table-filters"
+import { desktopColumnIds } from "./columns"
 import type { Device } from "@/lib/types"
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
   data: TData[]
+}
+
+// Hook to detect mobile screen size
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
+      return false
+    }
+    return window.matchMedia("(max-width: 767px)").matches
+  })
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 767px)")
+    setIsMobile(mediaQuery.matches)
+
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    mediaQuery.addEventListener("change", handler)
+    return () => mediaQuery.removeEventListener("change", handler)
+  }, [])
+
+  return isMobile
+}
+
+// Get default visibility based on screen size
+function getDefaultVisibility(isMobile: boolean): VisibilityState {
+  if (isMobile) {
+    // On mobile: show only the combined "device" column
+    return {
+      device: true,
+      ...Object.fromEntries(desktopColumnIds.map((id) => [id, false])),
+    }
+  }
+  // On desktop: hide the combined column, show individual columns (matterSupport hidden by default)
+  return {
+    device: false,
+    ...Object.fromEntries(desktopColumnIds.map((id) => [id, id !== "matterSupport"])),
+  }
 }
 
 export function DataTable<TData extends Device, TValue>({
@@ -41,7 +80,13 @@ export function DataTable<TData extends Device, TValue>({
 }: DataTableProps<TData, TValue>) {
   const [filters, setFilters] = useTableFilters()
   const [sorting, setSorting] = useState<SortingState>([])
-  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({})
+  const isMobile = useIsMobile()
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(() => getDefaultVisibility(false))
+
+  // Update visibility when switching between mobile/desktop
+  useEffect(() => {
+    setColumnVisibility(getDefaultVisibility(isMobile))
+  }, [isMobile])
 
   // Derive columnFilters from nuqs state
   const columnFilters = useMemo<ColumnFiltersState>(() => {
@@ -49,17 +94,20 @@ export function DataTable<TData extends Device, TValue>({
     if (filters.search) {
       result.push({ id: "name", value: filters.search })
     }
-    if (filters.manufacturer.length > 0) {
-      result.push({ id: "manufacturer_id", value: filters.manufacturer })
+    if (filters.brand && filters.brand.length > 0) {
+      result.push({ id: "brand_id", value: filters.brand })
     }
-    if (filters.category.length > 0) {
+    if (filters.category && filters.category.length > 0) {
       result.push({ id: "capabilities", value: filters.category })
     }
-    if (filters.protocol.length > 0) {
+    if (filters.protocol && filters.protocol.length > 0) {
       result.push({ id: "protocols", value: filters.protocol })
     }
-    if (filters.power.length > 0) {
+    if (filters.power && filters.power.length > 0) {
       result.push({ id: "powerSupply", value: filters.power })
+    }
+    if (filters.matter && filters.matter.length > 0) {
+      result.push({ id: "matterSupport", value: filters.matter })
     }
     return result
   }, [filters])
@@ -89,12 +137,23 @@ export function DataTable<TData extends Device, TValue>({
 
   return (
     <div className="flex gap-6">
-      <DataTableSidebar table={table} data={data} filters={filters} setFilters={setFilters} />
-      <div className="flex-1 space-y-4">
-        <DataTableToolbar table={table} filters={filters} setFilters={setFilters} />
+      {/* Desktop sidebar - hidden on mobile */}
+      <div className="hidden md:block">
+        <DataTableSidebar table={table} data={data} filters={filters} setFilters={setFilters} />
+      </div>
+      <div className="flex-1 space-y-4 min-w-0">
+        <div className="space-y-2 md:space-y-0">
+          <DataTableToolbar table={table} filters={filters} setFilters={setFilters} />
+          {/* Mobile filter drawer - visible only on mobile, below search */}
+          <div className="md:hidden">
+            <DataTableFilterDrawer table={table} data={data} filters={filters} setFilters={setFilters} />
+          </div>
+        </div>
+
+        {/* Single table for both mobile and desktop */}
         <div className="rounded-md border">
           <Table>
-            <TableHeader>
+            <TableHeader className={isMobile ? "sr-only" : ""}>
               {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
@@ -127,7 +186,7 @@ export function DataTable<TData extends Device, TValue>({
               ) : (
                 <TableRow>
                   <TableCell
-                    colSpan={columns.length}
+                    colSpan={table.getVisibleLeafColumns().length}
                     className="h-24 text-center"
                   >
                     No devices found.
