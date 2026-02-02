@@ -7,6 +7,7 @@
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "mains",
     "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1055-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
+    "contributor": "j4n-e4t",
     "meta": {
       "last_updated": "2026-01-20"
     }
@@ -19,6 +20,7 @@
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/timmerflotte-temperatur-feuchtigkeitssensor-smart__1402990_pe969208_s5.jpg?f=s",
+    "contributor": "j4n-e4t",
     "meta": {
       "last_updated": "2026-01-20"
     }
@@ -31,6 +33,7 @@
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggspray-funk-bewegungsmelder-smart__1420239_pe977223_s5.jpg?f=s",
+    "contributor": "j4n-e4t",
     "meta": {
       "last_updated": "2026-02-01"
     }
@@ -43,6 +46,7 @@
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/klippbok-wasserlecksensor-smart__1420217_pe977208_s5.jpg?f=s",
+    "contributor": "j4n-e4t",
     "meta": {
       "last_updated": "2026-02-01"
     }
@@ -55,6 +59,7 @@
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/bilresa-fernbedienung-weiss-smart-dualschalter__1402959_pe969197_s5.jpg?f=s",
+    "contributor": "j4n-e4t",
     "meta": {
       "last_updated": "2026-02-01"
     }
@@ -67,6 +72,7 @@
     "protocols": ["thread", "bluetooth"],
     "powerSupply": "battery",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggbett-tuer-fenstersensor-smart__1420257_pe977237_s5.jpg?f=s",
+    "contributor": "j4n-e4t",
     "meta": {
       "last_updated": "2026-02-01"
     }

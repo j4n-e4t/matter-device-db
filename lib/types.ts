@@ -35,6 +35,7 @@ export interface Device {
   supportsOTA?: boolean;
   features?: string[];
   imageUrl?: string;
+  contributor?: string;
   meta?: {
     last_updated?: string;
   };

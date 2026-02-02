@@ -1,8 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Calendar, Download, ExternalLink, Clock } from "lucide-react"
+import { ArrowLeft, Calendar, Download, ExternalLink, Clock, Github, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableRow,
+} from "@/components/ui/table"
 import {
   ProtocolBadge,
   CapabilityBadge,
@@ -41,7 +47,7 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
 
   return (
     <div className="min-h-screen">
-      <header className="sticky top-0 z-50 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
+      <header className="sticky top-0 z-50 border-b bg-card">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-primary">
@@ -50,7 +56,18 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                 Device DB
               </Link>
             </div>
-            <ThemeToggle />
+            <div className="flex items-center gap-2">
+              <Button variant="ghost" size="sm" asChild>
+                <a
+                  href="https://github.com/your-org/matter-device-db"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="h-4 w-4" />
+                </a>
+              </Button>
+              <ThemeToggle />
+            </div>
           </nav>
         </div>
       </header>
@@ -101,24 +118,40 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
               <h1 className="text-2xl md:text-3xl font-bold">{device.name}</h1>
             </div>
 
-            {/* Badges Row */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-2">
-              {device.capabilities.map((capability) => (
-                <CapabilityBadge key={capability} capability={capability} />
-              ))}
-              {device.powerSupply && (
-                <PowerSupplyBadge powerSupply={device.powerSupply} />
-              )}
-            </div>
-
-            {/* Protocols */}
-            <div>
-              <h2 className="text-sm font-medium text-muted-foreground mb-2 text-center md:text-left">Protocols</h2>
-              <div className="flex flex-wrap justify-center md:justify-start gap-2">
-                {device.protocols.map((protocol) => (
-                  <ProtocolBadge key={protocol} protocol={protocol} />
-                ))}
-              </div>
+            {/* Device Specs Table */}
+            <div className="rounded-md border">
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <TableCell className="font-medium text-muted-foreground w-[120px] md:w-[140px]">Capabilities</TableCell>
+                    <TableCell>
+                      <div className="flex flex-wrap gap-1.5">
+                        {device.capabilities.map((capability) => (
+                          <CapabilityBadge key={capability} capability={capability} />
+                        ))}
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium text-muted-foreground">Protocols</TableCell>
+                    <TableCell>
+                      <div className="flex flex-wrap gap-1.5">
+                        {device.protocols.map((protocol) => (
+                          <ProtocolBadge key={protocol} protocol={protocol} />
+                        ))}
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  {device.powerSupply && (
+                    <TableRow>
+                      <TableCell className="font-medium text-muted-foreground">Power Supply</TableCell>
+                      <TableCell>
+                        <PowerSupplyBadge powerSupply={device.powerSupply} />
+                      </TableCell>
+                    </TableRow>
+                  )}
+                </TableBody>
+              </Table>
             </div>
 
             {/* Features */}
@@ -154,6 +187,22 @@ export default async function DeviceDetailPage({ params }: { params: Promise<{ i
                   <span className={device.supportsOTA ? "text-green-600 dark:text-green-400" : "text-muted-foreground"}>
                     {device.supportsOTA ? "Supported" : "Not supported"}
                   </span>
+                </div>
+              )}
+
+              {/* Contributor */}
+              {device.contributor && (
+                <div className="flex items-center justify-center md:justify-start gap-2 text-sm">
+                  <User className="h-4 w-4 text-muted-foreground" />
+                  <span className="text-muted-foreground">Added by:</span>
+                  <a
+                    href={`https://github.com/${device.contributor}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    @{device.contributor}
+                  </a>
                 </div>
               )}
 
