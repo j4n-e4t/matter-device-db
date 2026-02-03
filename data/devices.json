@@ -3,13 +3,19 @@
     "id": "ikea-kajplats-e27-1055-white",
     "name": "Kajplats E27 1055 White",
     "brand_id": "ikea",
-    "capabilities": ["light"],
-    "protocols": ["thread"],
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
     "powerSupply": "mains",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1055-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
     "productUrl": "https://www.apple.com/shop/buy-homepod/homepod",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -18,12 +24,19 @@
     "id": "ikea-timmerflotte",
     "name": "TIMMERFLOTTE Temperature Sensor",
     "brand_id": "ikea",
-    "capabilities": ["temperature", "humidity"],
-    "protocols": ["thread"],
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/timmerflotte-temperatur-feuchtigkeitssensor-smart__1402990_pe969208_s5.jpg?f=s",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -32,12 +45,19 @@
     "id": "ikea-myggspray",
     "name": "MYGGSPRAY Motion Sensor",
     "brand_id": "ikea",
-    "capabilities": ["motion", "brightness"],
-    "protocols": ["thread"],
+    "capabilities": [
+      "motion",
+      "brightness"
+    ],
+    "protocols": [
+      "thread"
+    ],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggspray-funk-bewegungsmelder-smart__1420239_pe977223_s5.jpg?f=s",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -46,12 +66,18 @@
     "id": "ikea-klippbok",
     "name": "KLIPPBOK Water Leak Sensor ",
     "brand_id": "ikea",
-    "capabilities": ["water_leak"],
-    "protocols": ["thread"],
+    "capabilities": [
+      "water_leak"
+    ],
+    "protocols": [
+      "thread"
+    ],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/klippbok-wasserlecksensor-smart__1420217_pe977208_s5.jpg?f=s",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -60,12 +86,18 @@
     "id": "ikea-bilresa",
     "name": "BILRESA Dual Button Remote",
     "brand_id": "ikea",
-    "capabilities": ["remote"],
-    "protocols": ["thread"],
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/bilresa-fernbedienung-weiss-smart-dualschalter__1402959_pe969197_s5.jpg?f=s",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -74,12 +106,18 @@
     "id": "ikea-myggbett",
     "name": "MYGGBETT Contact Sensor",
     "brand_id": "ikea",
-    "capabilities": ["contact"],
-    "protocols": ["thread"],
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
     "powerSupply": "battery",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/myggbett-tuer-fenstersensor-smart__1420257_pe977237_s5.jpg?f=s",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -88,12 +126,18 @@
     "id": "ikea-kajplats-e27-1521-white",
     "name": "Kajplats E27 1521 White",
     "brand_id": "ikea",
-    "capabilities": ["light"],
-    "protocols": ["thread"],
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
     "powerSupply": "mains",
     "matterSupport": "native",
     "imageUrl": "https://www.ikea.com/de/de/images/products/kajplats-led-leuchtmittel-e27-1521-lm-smart-weissspektrum-rund-opalweiss__1452572_pe991091_s5.jpg?f=s",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -102,12 +146,23 @@
     "id": "apple-homepod-2",
     "name": "Apple HomePod (2nd Gen)",
     "brand_id": "apple",
-    "capabilities": ["hub", "speaker", "temperature", "humidity"],
-    "protocols": ["thread", "bluetooth", "wifi"],
+    "capabilities": [
+      "hub",
+      "speaker",
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth",
+      "wifi"
+    ],
     "powerSupply": "mains",
     "matterSupport": "native",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fseo%2FApple-HomePod-2nd-Generation-Midnight_13be9910-df07-4189-af70-109c47cab5b5.d03e94adb2427612412e11779717871d.png&f=1&nofb=1&ipt=f7a7d4efff8f3ad3910c8c15ef9dcefcfcf3db9af7b62fc3b133082143a7d6b5",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
     }
@@ -116,14 +171,4097 @@
     "id": "apple-homepod-mini",
     "name": "Apple HomePod Mini",
     "brand_id": "apple",
-    "capabilities": ["hub", "speaker", "temperature", "humidity"],
-    "protocols": ["thread", "bluetooth", "wifi"],
+    "capabilities": [
+      "hub",
+      "speaker",
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth",
+      "wifi"
+    ],
     "powerSupply": "mains",
     "matterSupport": "native",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.apple.com%2Fnewsroom%2Fimages%2F2024%2F07%2Fapple-introduces-homepod-mini-in-midnight%2Farticle%2FApple-HomePod-mini-midnight_inline.jpg.large_2x.jpg&f=1&nofb=1&ipt=b2d89e3bf4f7b9f01cb77a36543254dfba15cb546fed259183467cc061ac7363",
-    "contributors": ["j4n-e4t"],
+    "contributors": [
+      "j4n-e4t"
+    ],
     "meta": {
       "last_updated": "2026-02-02"
+    }
+  },
+  {
+    "id": "shenzhen-phaten-technology-co-ltd-smart-wi-fi-plug",
+    "name": "Smart Wi-Fi Plug",
+    "brand_id": "shenzhen-phaten-technology-co-ltd",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "klite-klite-wifi-led-lamp-full-color",
+    "name": "Klite WiFi LED Lamp – Full Color",
+    "brand_id": "klite",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/klite-wifi-led-lamp-full-color/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-essentials-lightstrip",
+    "name": "Nanoleaf Essentials Lightstrip",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://nanoleaf.me/en-US/products/essentials/lightstrips/?category=lightstrips&standard=matter&pack=smarter-kit&size=2",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-led-lamp-tunable-white",
+    "name": "WiZ LED lamp – Tunable white",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wiz-led-lamp-tunable-white-133/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "quectel-wireless-solutions-co-ltd-extended-color-light",
+    "name": "Extended Color Light",
+    "brand_id": "quectel-wireless-solutions-co-ltd",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/extended-color-light/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wifi-window-covering-on-off",
+    "name": "WiFi Window Covering – On/Off",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wifi-window-covering-on-off/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "yale-assure-locks-matter-module",
+    "name": "Assure Locks Matter Module",
+    "brand_id": "yale",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/yale-matter-smart-module/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "yale-assure-lock-sl",
+    "name": "Assure Lock SL",
+    "brand_id": "yale",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/yale-matter-smart-module/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "woox-smart-plug",
+    "name": "Smart Plug",
+    "brand_id": "woox",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-28/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-energy",
+    "name": "Eve Energy",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/eve-energy-9/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-aqua",
+    "name": "Eve Aqua",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/eve-energy-9/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-thermo",
+    "name": "Eve Thermo",
+    "brand_id": "eve",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-flare",
+    "name": "Eve Flare",
+    "brand_id": "eve",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "ningbo-dooya-mechanic-and-electronic-technology-co-ltd-wi-fi-window-covering-motor",
+    "name": "Wi-Fi Window Covering Motor",
+    "brand_id": "ningbo-dooya-mechanic-and-electronic-technology-co-ltd",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "imageUrl": "https://s3.amazonaws.com/assets.knackhq.com/assets/54e658034b4f44e42fb18201/647408210f1b22002838e07f/thumb_1/imagewifitubularmotor.webp",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-window-covering-motor/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuo-tuo-smart-button",
+    "name": "TUO Smart Button",
+    "brand_id": "tuo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuo-tuo-contact-sensor",
+    "name": "TUO Contact Sensor",
+    "brand_id": "tuo",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tuo-contact-sensor-door-window/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "momax-technology-hong-kong-limited-smart-rainbow-led",
+    "name": "Smart Rainbow LED",
+    "brand_id": "momax-technology-hong-kong-limited",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-rainbow-led/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-smart-wi-fi-dimmer-fan",
+    "name": "Smart Wi-Fi Dimmer Fan",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-wi-fi-dimmer-fan/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "uascent-technology-company-limited-ua-smartswitch-smart-wifi-switch-0x0435",
+    "name": "UA-SmartSwitch – Smart Wifi Switch – 0x0435",
+    "brand_id": "uascent-technology-company-limited",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/ua-smartswitch-32/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "hama-smart-plug",
+    "name": "Smart Plug",
+    "brand_id": "hama",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-27/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-door-and-window",
+    "name": "Eve Door & Window",
+    "brand_id": "eve",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/eve-door-window-3/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-motion",
+    "name": "Eve Motion",
+    "brand_id": "eve",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/eve-motion-3/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "sonoff-switchman-smart-wall-switch-m5",
+    "name": "SwitchMan Smart Wall Switch-M5",
+    "brand_id": "sonoff",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "onvis-onvis-smart-plug-s4",
+    "name": "Onvis Smart Plug S4",
+    "brand_id": "onvis",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/onvis-smart-plug-s4/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "arlec-rgb-cct-dimmable-led-a60-globe",
+    "name": "RGB CCT Dimmable LED A60 Globe",
+    "brand_id": "arlec",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "imageUrl": "https://s3.amazonaws.com/assets.knackhq.com/assets/54e658034b4f44e42fb18201/6459c1f291875c002923e285/thumb_1/gld322mtrha.jpeg",
+    "productUrl": "https://csa-iot.org/csa_product/rgb-cct-dimmable-led-a60-globe/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "govee-govee-led-strip-light-m1",
+    "name": "Govee LED Strip Light M1",
+    "brand_id": "govee",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://us.govee.com/products/govee-led-strip-light-m1-matter-compatible",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "govee-govee-rgbic-led-permanent-outdoor-lights",
+    "name": "Govee RGBIC LED Permanent Outdoor Lights",
+    "brand_id": "govee",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/govee-rgbwwic-permanent-outdoor-lights-pro-3/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "shenzhen-qiachip-wireless-e-commerce-co-smart-switch",
+    "name": "Smart Switch",
+    "brand_id": "shenzhen-qiachip-wireless-e-commerce-co",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-switch-4/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wifi-led-lamp-full-color",
+    "name": "WiFi LED Lamp – Full Color",
+    "brand_id": "espressif",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wifi-led-lamp-full-color-3/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "arlec-rgb-cct-dimmable-led-downlight",
+    "name": "RGB CCT Dimmable LED Downlight",
+    "brand_id": "arlec",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "imageUrl": "https://s3.amazonaws.com/assets.knackhq.com/assets/54e658034b4f44e42fb18201/6459bfe791875c002923e1d4/thumb_1/ald095mtrha.jpeg",
+    "productUrl": "https://csa-iot.org/csa_product/rgb-cct-dimmable-led-downlight-2/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "govee-govee-string-light",
+    "name": "Govee String Light",
+    "brand_id": "govee",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/govee-string-light/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wi-fi-plug-on-off-0x200d-wireless",
+    "name": "Wi-Fi Plug on/off 0x200D Wireless",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-plug-on-off-3/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wi-fi-plug-on-off-0x200f-bluetooth-wireless-router",
+    "name": "Wi-Fi Plug on/off 0x200F Bluetooth Wireless router",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-plug-on-off-5/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wi-fi-plug-on-off-0x201b",
+    "name": "Wi-Fi Plug on/off 0x201B",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-plug-on-off-7/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wi-fi-plug-esp32-c2-soc-espressif-s-matter-sdk",
+    "name": "Wi-Fi Plug – ESP32-C2 SoC – Espressif’s Matter SDK",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-plug-on-off-14/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zhongshan-qihang-electronic-technology-co-smart-plug-in-unit",
+    "name": "Smart Plug-in Unit",
+    "brand_id": "zhongshan-qihang-electronic-technology-co",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-in-unit-12/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "govee-govee-glide-wall-light",
+    "name": "Govee Glide Wall Light",
+    "brand_id": "govee",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/govee-wall-light/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-plug-p125m",
+    "name": "Tapo Smart Plug P125M",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-plug-energy-monitoring-2/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-plug",
+    "name": "Wiz Plug",
+    "brand_id": "wiz",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "govee-govee-rgbic-outdoor-neon-rope-light",
+    "name": "Govee RGBIC Outdoor Neon Rope Light",
+    "brand_id": "govee",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-multicolor-bulb",
+    "name": "Tapo Smart Multicolor Bulb",
+    "brand_id": "tapo",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-multicolor-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "aqara-aqara-t1-strip",
+    "name": "Aqara T1 Strip",
+    "brand_id": "aqara",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leviton-leviton-outdoor-plug",
+    "name": "Leviton Outdoor Plug",
+    "brand_id": "leviton",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leedarson-smart-thread-plug",
+    "name": "Smart Thread Plug",
+    "brand_id": "leedarson",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/matter-over-thread-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leedarson-smart-plug",
+    "name": "Smart Plug",
+    "brand_id": "leedarson",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-12/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-tuya-wi-fi-strip-light",
+    "name": "TUYA Wi-Fi Strip Light",
+    "brand_id": "tuya",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-tuya-wi-fi-filament-light",
+    "name": "TUYA Wi-Fi Filament Light",
+    "brand_id": "tuya",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tuya-wi-fi-filament-light/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wifi-dual-channel-plug-on-off",
+    "name": "WiFi Dual-channel Plug On/Off",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wifi-dual-channel-plug-on-off/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "siterwell-door-window-sensor",
+    "name": "Door Window Sensor",
+    "brand_id": "siterwell",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/door-window-sensor-3/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leedarson-smart-dimmer-switch",
+    "name": "Smart Dimmer Switch",
+    "brand_id": "leedarson",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-dimmer-switch-3/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "ecoflow-ecoflow-smart-plug",
+    "name": "EcoFlow Smart Plug",
+    "brand_id": "ecoflow",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/ecoflow-smart-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leedarson-smart-filament-bulb-st64-cct",
+    "name": "Smart Filament Bulb ST64 CCT",
+    "brand_id": "leedarson",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-filament-bulb-st64-cct/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "siterwell-motion-sensor",
+    "name": "Motion Sensor",
+    "brand_id": "siterwell",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/motion-sensor-7/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "neo-smart-plug",
+    "name": "Smart Plug",
+    "brand_id": "neo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-10/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "neo-neo-motion-sensor",
+    "name": "Neo Motion Sensor",
+    "brand_id": "neo",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-10/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "neo-neo-window-door-sensor",
+    "name": "Neo Window/Door Sensor",
+    "brand_id": "neo",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "neo-neo-in-wall-switch",
+    "name": "Neo In-Wall Switch",
+    "brand_id": "neo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-outdoor-led-strip-full-color",
+    "name": "WiZ outdoor LED strip – Full color",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wiz-outdoor-led-strip-full-color/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-rgb-cct-dimmable-led-downlight",
+    "name": "RGB CCT Dimmable LED Downlight",
+    "brand_id": "tuya",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/rgb-cct-dimmable-led-downlight/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zumtobel-group-ag-led-converter-mtr",
+    "name": "LED Converter MTR",
+    "brand_id": "zumtobel-group-ag",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "imageUrl": "https://s3.amazonaws.com/assets.knackhq.com/assets/54e658034b4f44e42fb18201/644106c4834d8300289ec5cb/thumb_1/lc_150w_24v_mtr_sc_pre2_splitted.webp",
+    "productUrl": "https://csa-iot.org/csa_product/led-converter-mtr/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-door-window-sensor",
+    "name": "Door Window Sensor",
+    "brand_id": "tuya",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/door-window-sensor-2/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-wi-fi-color-light",
+    "name": "Wi-Fi Color Light",
+    "brand_id": "tuya",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-motion-sensor",
+    "name": "Motion Sensor",
+    "brand_id": "tuya",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/motion-sensor-6/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-thread-plug-in",
+    "name": "Thread plug in",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/thread-plug-in/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "sonoff-smart-plug-in-unit",
+    "name": "Smart Plug-in Unit",
+    "brand_id": "sonoff",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-in-unit-11/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zemismart-zemismart-bulb",
+    "name": "Zemismart bulb",
+    "brand_id": "zemismart",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/zemismart-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zemismart-zemismart-downlight",
+    "name": "Zemismart downlight",
+    "brand_id": "zemismart",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/zemismart-downlight/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zemismart-zemismart-inline-module",
+    "name": "Zemismart Inline Module",
+    "brand_id": "zemismart",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/zemismart-inline-module/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-led-lamp-full-color",
+    "name": "WiZ LED lamp – Full color",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-led-luminaire-dimmable",
+    "name": "WiZ LED luminaire – Dimmable",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wiz-led-luminaire-dimmable-5/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-led-luminaire-full-color",
+    "name": "WiZ LED luminaire – Full color",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wiz-led-luminaire-full-color-58/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "uascent-technology-company-limited-ua-smartplug",
+    "name": "UA-SmartPlug",
+    "brand_id": "uascent-technology-company-limited",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/ua-smartplug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-led-luminaire-tunable-white",
+    "name": "WiZ LED luminaire – Tunable white",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wiz-led-luminaire-tunable-white-74/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "uascent-technology-company-limited-ua-rgbcwbulb",
+    "name": "UA-RGBCWBulb",
+    "brand_id": "uascent-technology-company-limited",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/ua-rgbcwbulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-caveman-smart-6-downlight",
+    "name": "Caveman Smart 6″ Downlight",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/caveman-smart-6-downlight/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "shenzhen-coolkit-technology-co-ltd-smart-plug-in-unit",
+    "name": "Smart Plug-in Unit",
+    "brand_id": "shenzhen-coolkit-technology-co-ltd",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-in-unit/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-caveman-smart-a19-a60-light-bulb",
+    "name": "Caveman Smart A19/A60 Light Bulb",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/caveman-smart-a19-a60-light-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-smart-outdoor-plug",
+    "name": "Smart Outdoor Plug",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/kasa-smart-outdoor-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "netatomo-netatmo-smart-security-sensor",
+    "name": "Netatmo Smart Security Sensor",
+    "brand_id": "netatomo",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/netatmo-smart-security-sensor/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zemismart-zemismart-mt01-slide-curtain",
+    "name": "Zemismart MT01 Slide Curtain",
+    "brand_id": "zemismart",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/zemismart-mt01-slide-curtain/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tedee-tedee-go-lock",
+    "name": "Tedee Go Lock",
+    "brand_id": "tedee",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "level-level-lock",
+    "name": "Level Lock",
+    "brand_id": "level",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "level-level-lock-plus",
+    "name": "Level Lock Plus",
+    "brand_id": "level",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "level-level-bolt",
+    "name": "Level Bolt",
+    "brand_id": "level",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "espressif-wi-fi-switch-on-off",
+    "name": "Wi-Fi Switch On/Off",
+    "brand_id": "espressif",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-switch-on-off/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "google-nest-thermostat",
+    "name": "Nest Thermostat",
+    "brand_id": "google",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/nest-thermostat-2/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "hoorii-technology-co-ltd-hoorii-smart-plug",
+    "name": "HooRii Smart Plug",
+    "brand_id": "hoorii-technology-co-ltd",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/hoorii-smart-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "jiangsu-shushi-technology-co-ltd-smart-color-night-light",
+    "name": "Smart Color Night Light",
+    "brand_id": "jiangsu-shushi-technology-co-ltd",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "heiman-smart-door-sensor",
+    "name": "Smart door sensor",
+    "brand_id": "heiman",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-door-sensor-4/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "innovation-matters-iot-gmbh-m2d-bridge",
+    "name": "M2D Bridge",
+    "brand_id": "innovation-matters-iot-gmbh",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.innovation-matters.at/en/product-2/m2d_bridge/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "sengled-sengled-multicolor-a19-bulb",
+    "name": "Sengled Multicolor A19 Bulb",
+    "brand_id": "sengled",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/sengled-multicolor-a19-bulb-8/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "sengled-wifi-plug",
+    "name": "Wifi Plug",
+    "brand_id": "sengled",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/sengled-wi-fi-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "longan-link-tech-co-ltd-ly-switch-wifi4-nl",
+    "name": "LY-switch-WIFI4-NL",
+    "brand_id": "longan-link-tech-co-ltd",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/ly-switch-wifi4-nl/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "ubisys-technologies-gmbh-smart-color-night-light",
+    "name": "Smart Color Night Light",
+    "brand_id": "ubisys-technologies-gmbh",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-color-night-light/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-essentials-smart-recessed-downlight",
+    "name": "Nanoleaf Essentials Smart Recessed Downlight",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/nanoleaf-essentials-smart-recessed-downlight/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-sense-plus-controls",
+    "name": "Nanoleaf Sense Plus Controls",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-lines",
+    "name": "Nanoleaf Lines",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-skylight",
+    "name": "Nanoleaf Skylight",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-canvas",
+    "name": "Nanoleaf Canvas",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-shapes",
+    "name": "Nanoleaf Shapes",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-wi-fi-dimmer-switch",
+    "name": "Tapo Smart Wi-Fi Dimmer Switch",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-wi-fi-dimmer-switch/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zemismart-zemismart-roller-motor",
+    "name": "Zemismart Roller Motor",
+    "brand_id": "zemismart",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/zemismart-matter-roller-motor/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zemismart-zemismart-thread-roller-motor",
+    "name": "Zemismart Thread Roller Motor",
+    "brand_id": "zemismart",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/zemismart-thread-roller-motor-4/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-outdoor-led-luminaire-full-color",
+    "name": "WiZ outdoor LED luminaire – Full color",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-wi-fi-light-switch",
+    "name": "Tapo Smart Wi-Fi Light Switch",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/kasa-smart-wi-fi-light-switch/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-outdoor-plug",
+    "name": "Tapo Smart Outdoor Plug",
+    "brand_id": "tapo",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-outdoor-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "infineon-technologies-ag-infineon-thread-light-bulb",
+    "name": "Infineon Thread Light bulb",
+    "brand_id": "infineon-technologies-ag",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/infineon-thread-light-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-wi-fi-light-switch-2",
+    "name": "Tapo Smart Wi-Fi Light Switch",
+    "brand_id": "tapo",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-wi-fi-light-switch/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-wi-fi-dimmer-switch-2",
+    "name": "Tapo Smart Wi-Fi Dimmer Switch",
+    "brand_id": "tapo",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-wi-fi-dimmer-switch/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "infineon-technologies-ag-infineon-thread-door-lock",
+    "name": "Infineon Thread Door lock",
+    "brand_id": "infineon-technologies-ag",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-plug",
+    "name": "Tapo Smart Plug",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-wi-fi-lamp-dimmer-kit",
+    "name": "Tapo Smart Wi-Fi Lamp Dimmer Kit",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-wi-fi-lamp-dimmer-kit/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-kasa-smart-wifi-plug-energy-monitoring",
+    "name": "Kasa Smart Wifi Plug, Energy Monitoring",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/kasa-smart-wifi-plug-energy-monitoring/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tridonic-cv-driver",
+    "name": "CV Driver",
+    "brand_id": "tridonic",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tridonic-wireless-module-mtr",
+    "name": "Wireless Module MTR",
+    "brand_id": "tridonic",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wireless-module-mtr-2/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tridonic-wireless-passive-module-mtr",
+    "name": "Wireless Passive Module MTR",
+    "brand_id": "tridonic",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tridonic-wireless-module-sr-mtr",
+    "name": "Wireless Module SR MTR",
+    "brand_id": "tridonic",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "meross-smart-plug-mini-mss315",
+    "name": "Smart Plug Mini (MSS315)",
+    "brand_id": "meross",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-mini-2/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "longan-link-tech-co-ltd-ly-windowcover-series",
+    "name": "LY-WindowCover series",
+    "brand_id": "longan-link-tech-co-ltd",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/ly-windowcover-series/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-smart-wi-fi-power-strip",
+    "name": "Tapo Smart Wi-Fi Power Strip",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-smart-wi-fi-power-strip/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-led-lamp-dimmable",
+    "name": "WiZ LED lamp – Dimmable",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wiz-led-lamp-dimmable/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "cync-cync-full-color-direct-connect-led-a19",
+    "name": "Cync Full Color Direct Connect LED A19",
+    "brand_id": "cync",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/cync-full-color-direct-connect-led-a19/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wiz-wiz-led-strip-full-color",
+    "name": "WiZ LED strip – Full color",
+    "brand_id": "wiz",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wiz-led-strip-full-color-12/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-motionblinds",
+    "name": "Eve MotionBlinds",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/eve-motionblinds-for-roller-blinds/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-light-switch",
+    "name": "Eve Light Switch",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-shutterswitch",
+    "name": "Eve ShutterSwitch",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-room",
+    "name": "Eve Room",
+    "brand_id": "eve",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-waterguard",
+    "name": "Eve Waterguard",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "linkind-linkind-a19-e27-color-bulb",
+    "name": "Linkind A19/E27 Color Bulb",
+    "brand_id": "linkind",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "linkind-linkind-br30-color-bulb",
+    "name": "Linkind BR30 Color Bulb",
+    "brand_id": "linkind",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leviton-leviton-decora-switch-d215s",
+    "name": "Leviton Decora Switch D215S",
+    "brand_id": "leviton",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leviton-leviton-decora-dimmer-d26hd",
+    "name": "Leviton Decora Dimmer D26HD",
+    "brand_id": "leviton",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leviton-leviton-decora-d215p-smart-plug",
+    "name": "Leviton Decora D215P Smart Plug",
+    "brand_id": "leviton",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leviton-leviton-decora-d23lp-smart-plug-dimmer",
+    "name": "Leviton Decora D23LP Smart Plug Dimmer",
+    "brand_id": "leviton",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eltako-eltako-dimmer",
+    "name": "Eltako Dimmer",
+    "brand_id": "eltako",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-eve-weather",
+    "name": "Eve Weather",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "smartwings-motorized-roller-blind",
+    "name": "Motorized Roller Blind",
+    "brand_id": "smartwings",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "cync-cync-indoor-plug",
+    "name": "Cync Indoor Plug",
+    "brand_id": "cync",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/cync-indoor-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tapo-tapo-mini-plug",
+    "name": "Tapo Mini Plug",
+    "brand_id": "tapo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/tapo-mini-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-thread-color-bulb",
+    "name": "Thread Color Bulb",
+    "brand_id": "tuya",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/thread-bulb-13/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-thread-motion-sensor",
+    "name": "Thread Motion Sensor",
+    "brand_id": "tuya",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/motion-sensor-8/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-thread-door-window-sensor",
+    "name": "Thread Door/Window Sensor",
+    "brand_id": "tuya",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/door-window-sensor-4/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "heiman-smart-motion-sensor",
+    "name": "Smart motion sensor",
+    "brand_id": "heiman",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "orvibo-smart-dimmer-switch",
+    "name": "Smart Dimmer Switch",
+    "brand_id": "orvibo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-dimmer-switch/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "orvibo-smart-wall-lamp",
+    "name": "Smart Wall Lamp",
+    "brand_id": "orvibo",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-wall-lamp/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-essentials-e27-a19-e26-smart-bulb",
+    "name": "Nanoleaf Essentials E27 | A19 | E26 Smart Bulb",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/nanoleaf-essentials-a19-a60-smart-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-essentials-br30-br22-smart-bulb",
+    "name": "Nanoleaf Essentials BR30 | BR22 Smart Bulb",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/nanoleaf-essentials-br30-smart-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-nanoleaf-essentials-gu10-smart-bulb",
+    "name": "Nanoleaf Essentials GU10 Smart Bulb",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/nanoleaf-essentials-gu10-smart-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leedarson-a19-e27-e26-smart-rgb-led-bulb",
+    "name": "A19 / E27 / E26 Smart RGB Led Bulb",
+    "brand_id": "leedarson",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-rgbtw-bulb-11/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "leedarson-a19-e27-e26-smart-rgb-led-bulb-2",
+    "name": "A19 / E27 / E26 Smart RGB Led Bulb",
+    "brand_id": "leedarson",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/a19-smart-rgb-led-bulb/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "aqara-motion-and-light-sensor-p2",
+    "name": "Motion and Light Sensor P2",
+    "brand_id": "aqara",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/motion-and-light-sensor-p2/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "aqara-door-and-window-sensor-p2",
+    "name": "Door and Window Sensor P2",
+    "brand_id": "aqara",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa-iot_products/?p_type=14#products",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "schneider-electric-smart-plug",
+    "name": "Smart Plug",
+    "brand_id": "schneider-electric",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/smart-plug-9/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "haier-haier-air-conditioner",
+    "name": "Haier air conditioner",
+    "brand_id": "haier",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/haier-air-conditioner/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "yeelight-yeelight-cube",
+    "name": "Yeelight Cube",
+    "brand_id": "yeelight",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/yeelight-smart-light/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "yeelight-yeelight-curtain-controller",
+    "name": "Yeelight Curtain Controller",
+    "brand_id": "yeelight",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-wi-fi-bulb-rgbcw",
+    "name": "Wi-Fi Bulb RGBCW",
+    "brand_id": "tuya",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-bulb-rgbcw/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuya-wi-fi-plug",
+    "name": "Wi-Fi plug",
+    "brand_id": "tuya",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://csa-iot.org/csa_product/wi-fi-plug/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "wisdom-radiator-valve",
+    "name": "Radiator Valve",
+    "brand_id": "wisdom",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.hashop.nl/Wisdom-Slimme-Radiatorthermostaat-Matter-over-Thread",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "dendo-sheer-curtain-motor-tu12",
+    "name": "Sheer Curtain motor TU12",
+    "brand_id": "dendo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://dendo.com.au/products/sheer-curtain-motor",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "dendo-roller-blind-rd42-rz32",
+    "name": "Roller Blind RD42 RZ32",
+    "brand_id": "dendo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://dendo.com.au/products/automatic-roller-blinds",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "aqara-u200",
+    "name": "U200",
+    "brand_id": "aqara",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.kickstarter.com/projects/aqara-u200/smartlock",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tado-heatpump-optimizer-x",
+    "name": "Heatpump Optimizer X",
+    "brand_id": "tado",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://shop.tado.com/en/products/heat-pump-optimizer-x",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tado-radiator-valve-x",
+    "name": "Radiator Valve X",
+    "brand_id": "tado",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://shop.tado.com/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tado-thermostat-x",
+    "name": "Thermostat X",
+    "brand_id": "tado",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://shop.tado.com/",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "shyugj-dimmer-switch",
+    "name": "Dimmer Switch",
+    "brand_id": "shyugj",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.alibaba.com/product-detail/EU-Standard-Matter-Over-Thread-LED_1601123301323.html?spm=a2700.galleryofferlist.normal_offer.d_image.2a577d72SJOO7P",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "tuo-temperature-sensor",
+    "name": "Temperature Sensor",
+    "brand_id": "tuo",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://findtuo.com/products/tuo-temperature-sensor-with-matter-over-thread-support",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "elkoep-on-wall-button-controller",
+    "name": "On wall button controller",
+    "brand_id": "elkoep",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.elkoep.com/on-wall-button-controllers-4-buttons-matter---rfwb-40gmt",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "elkoep-touch-controller-4-buttons",
+    "name": "Touch Controller 4 Buttons",
+    "brand_id": "elkoep",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.elkoep.com/glass-touch-controller-–-4-buttons-sharp-matter-br-rfgb-40mt",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "elkoep-universal-dimmer",
+    "name": "Universal Dimmer",
+    "brand_id": "elkoep",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.elkoep.com/universal-dimmer-matter-br-rfdel-71b-slmt",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "elkoep-switch-unit",
+    "name": "Switch Unit",
+    "brand_id": "elkoep",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.elkoep.com/switch-unit-with-inputs-for-external-buttons-matter-rfsai-62b-slmt",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "elkoep-motion-detector",
+    "name": "Motion Detector",
+    "brand_id": "elkoep",
+    "capabilities": [
+      "motion"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.elkoep.com/motion-detector-for-ceiling-mounting-matter-rfmd-200mt",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "elkoep-window-door-detector",
+    "name": "Window Door Detector",
+    "brand_id": "elkoep",
+    "capabilities": [
+      "contact"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.elkoep.com/windowdoor-detector-matter-brrfwd-100mt",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "secuyou-patio-door-lock",
+    "name": "Patio Door Lock",
+    "brand_id": "secuyou",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.secuyou.dk/collections/produkter",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "utec-bright-color-bulb",
+    "name": "Bright Color Bulb",
+    "brand_id": "utec",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "utec-smart-plug",
+    "name": "Smart Plug",
+    "brand_id": "utec",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "utec-ultraloq-bolt-fingerprint",
+    "name": "Ultraloq Bolt Fingerprint",
+    "brand_id": "utec",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "utec-smart-switch-universal",
+    "name": "Universal",
+    "brand_id": "utec-smart-switch",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eve-energy-outlet",
+    "name": "Energy Outlet",
+    "brand_id": "eve",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.amazon.com/Eve-Energy-Outlet-Matter-SmartThings/dp/B0CT62FC6W",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nuki-lock-pro-4-0",
+    "name": "Lock Pro 4.0",
+    "brand_id": "nuki",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread",
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.robbshop.nl/nuki-smart-lock-pro-4.0-wit-wifi-gratis-door-sensor",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nuki-lock-4-0",
+    "name": "Lock 4.0",
+    "brand_id": "nuki",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.robbshop.nl/nuki-smart-lock-4.0-wit",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "airversa-humelle",
+    "name": "Humelle",
+    "brand_id": "airversa",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.airversa.com/products/humelle-smart-humidifier",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "holomarq-smart-door-knob",
+    "name": "Smart Door Knob",
+    "brand_id": "holomarq",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "thread"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://holomarq.com/products/apple-home-over-thread-sequra-smart-door-knob",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "google-nest-learning-thermostat",
+    "name": "Nest Learning Thermostat",
+    "brand_id": "google",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "govee-smart-tower",
+    "name": "Smart Tower",
+    "brand_id": "govee",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://us.govee.com/products/goveelife-42-smart-tower-fan-2-max?Title=Default+Title&irclickid=Sn-VsXzMSxyKUJHWt0WDNV8qUkC0e7WvIXRs2g0&irgwc=1&utm_source=impact_12845&utm_medium=affiliate&utm_campaign=Skimbit%20Ltd",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "midea-air-conditioner-12000-btu",
+    "name": "Air Conditioner 12000 BTU",
+    "brand_id": "midea",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.midea.com/us/air-conditioners/window-air-conditioners/12000-btu-u-shaped-air-conditioner-maw12v1qwt",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "midea-3-in-1-fan-heater-air-purifier",
+    "name": "3 in 1 Fan Heater Air Purifier",
+    "brand_id": "midea",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "productUrl": "https://www.midea.com/us/heaters/midea-3-in-1-fan-heater-air-purifier-msf15ah6lb",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "welow-air-purifier",
+    "name": "Air Purifier",
+    "brand_id": "welow",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.aidot.com/aidot-welov-matter-p200-pro-smart-air-purifier-for-homeup-to-1570-ft-with-air-quality-monitor.html",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "roborock-s8-max-v-ultra",
+    "name": "S8 Max V Ultra",
+    "brand_id": "roborock",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://global.roborock.com/pages/roborock-s8-maxv-ultra",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "ecovacs-deebot-x2",
+    "name": "Deebot X2",
+    "brand_id": "ecovacs",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.ecovacs.com/us/deebot-robotic-vacuum-cleaner/deebot-x2-omni-combo",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "flic-twist",
+    "name": "Twist",
+    "brand_id": "flic",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://flic.io/shop/flic-twist",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "flic-button",
+    "name": "Button",
+    "brand_id": "flic",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://flic.io/shop/flic-2-single-pack",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "linkind-smart-switch",
+    "name": "Smart Switch",
+    "brand_id": "linkind",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.aidot.com/aidot-linkind-matter-smart-wifi-bluetooth-switch-2-pack-2-pack.html",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "orvibo-dimmer-switch",
+    "name": "Dimmer Switch",
+    "brand_id": "orvibo",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.amazon.com/dp/B0CGHPBRDD",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "zemismart-push-button",
+    "name": "Push Button",
+    "brand_id": "zemismart",
+    "capabilities": [
+      "remote"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "eberle-thermostat",
+    "name": "Thermostat",
+    "brand_id": "eberle",
+    "capabilities": [
+      "temperature",
+      "humidity"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "battery",
+    "matterSupport": "native",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "lifx-a21-smart-bulb",
+    "name": "A21 Smart Bulb",
+    "brand_id": "lifx",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.lifx.com/products/supercolor-1600lm-a21?_pos=1&_fid=31aa0bd8f&_ss=c",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "lifx-a21-neon-flex",
+    "name": "A21 Neon Flex",
+    "brand_id": "lifx",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.lifx.com/products/neon-flex-16ft-outdoor?_pos=3&_fid=31aa0bd8f&_ss=c",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "lifx-outdoor-path-square",
+    "name": "Outdoor Path Square",
+    "brand_id": "lifx",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.lifx.com/products/path-light-square?_pos=6&_fid=31aa0bd8f&_ss=c",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "lifx-outdoor-path-round",
+    "name": "Outdoor Path Round",
+    "brand_id": "lifx",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.lifx.com/products/path-light-round?_pos=5&_fid=31aa0bd8f&_ss=c",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "lifx-outdoor-spot",
+    "name": "Outdoor Spot",
+    "brand_id": "lifx",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.lifx.com/products/spot-light-round?_pos=4&_fid=31aa0bd8f&_ss=c",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "lifx-outdoor-par38",
+    "name": "Outdoor Par38",
+    "brand_id": "lifx",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.lifx.com/products/supercolor-1600lm-par38?_pos=2&_fid=31aa0bd8f&_ss=c",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "onvis-contact-sensor-ct3",
+    "name": "Contact sensor CT3",
+    "brand_id": "onvis",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.onvistech.com/product_details/CT3.html",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "onvis-motion-sensor-sm2",
+    "name": "Motion sensor SM2",
+    "brand_id": "onvis",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "thread",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://www.onvistech.com/product_details/SMS2.html",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-multicolor-strip",
+    "name": "Multicolor Strip",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://nanoleaf.me/en-EU/products/essentials/lightstrips/multicolor-hd/?size=5&specs=true",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "nanoleaf-outdoor-string",
+    "name": "Outdoor String",
+    "brand_id": "nanoleaf",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi",
+      "bluetooth"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://nanoleaf.me/en-US/products/essentials/outdoor/multicolor-string-lights/?pack=smarter-kit&size=15",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
+    }
+  },
+  {
+    "id": "govee-outdoor-triad-flood-light",
+    "name": "Outdoor Triad Flood Light",
+    "brand_id": "govee",
+    "capabilities": [
+      "light"
+    ],
+    "protocols": [
+      "wifi"
+    ],
+    "powerSupply": "mains",
+    "matterSupport": "native",
+    "productUrl": "https://eu.govee.com/products/govee-triad-flood-light?Quantity=1+Pack",
+    "contributors": [
+      "imported-from-matterdatabase"
+    ],
+    "meta": {
+      "last_updated": "2026-02-03"
     }
   }
 ]
